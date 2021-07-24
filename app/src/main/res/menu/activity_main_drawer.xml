@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@mipmap/share_app"
+        android:title="Share App" />
+    <item
+        android:id="@+id/nav_rateus"
+        android:icon="@mipmap/rate_app"
+        android:title="Rate Us" />
+
+    <item
+        android:id="@+id/nav_privacy"
+        android:icon="@mipmap/privacy_app"
+        android:title="Privacy Policy" />
+
+
+</menu>

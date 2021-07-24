@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rela1"
+        android:background="@drawable/a1_grad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:src="@mipmap/left_arrow" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/iv_back"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:text="@string/Blood_Pressure_Calculator"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ad_layout"
+        android:layout_below="@+id/rela1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bodyfat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Systolic_Blood_Pressure"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/textsize_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:padding="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/corner1"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fat_level"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="@string/Blood_Pressure_Category"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_men_fatlevel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Systolic_mmHg"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_vlow_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Normal"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_vlow_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="&lt;120"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_low_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Prehypertension"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_low_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="120-139"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_avg_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Hypertension_Stage1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_avg_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="140-159"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_high_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Hypertension_Stage2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_high_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="160-180"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_vhigh_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Hypertensive_Crisis"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_vhigh_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="&gt;180"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_bodayfat_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/Diastolic_Blood_Pressure"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/textsize_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:padding="5dp"
+                android:background="@drawable/corner1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_bodayfat_classification"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="@string/Blood_Pressure_Category"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_bodayfat_classification_man"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Diastolic_mmHg"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_essential_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Normal"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_essential_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="&lt;80"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_athletes"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Prehypertension"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_athletes_man"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="80-89"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fitness"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Hypertension_Stage1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_fitness_man"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="90-99"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_acceptable"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Hypertension_Stage2"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_acceptable_man"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="100-110"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_acceptable1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Hypertensive_Crisis"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_acceptable_man1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="&gt;110"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/ad_layout"
+        layout="@layout/native_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|center_vertical|center_horizontal|center" />
+</RelativeLayout>

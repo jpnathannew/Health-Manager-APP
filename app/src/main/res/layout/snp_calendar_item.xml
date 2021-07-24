@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_date" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true">
+        <TextView android:textSize="16sp" android:textColor="#000000" android:gravity="center" android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/date_icon" android:visibility="visible" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginTop="3dp" android:src="@drawable/ic_dot_green" android:layout_below="@+id/tv_date" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/date_icon1" android:visibility="visible" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginTop="3dp" android:src="@drawable/ic_dot_red" android:layout_below="@+id/tv_date" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/date_icon2" android:visibility="visible" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginTop="3dp" android:src="@drawable/calendar_arrow_left" android:layout_below="@+id/tv_date" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

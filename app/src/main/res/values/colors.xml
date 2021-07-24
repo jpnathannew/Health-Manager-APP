@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#36D1DC</color>
+    <color name="colorPrimaryDark">#77ae36</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="line_color">#9BB5C1</color>
+
+    <color name="gray_color">#E6E6E6</color>
+
+
+    <color name="colorWhite">#F7F9F8</color>
+    <color name="colorBlack">#090909</color>
+    <color name="colorSkyBlue">#03BBFF</color>
+    <color name="grey">#A5A3A3</color>
+    <color name="red">#D80101</color>
+    <color name="dividerColor">#F5F5F5</color>
+    <color name="grey_calendar">#434343</color>
+    <color name="background">#e0d7ce</color>
+    <color name="background_calendar">#20ffffff</color>
+    <color name="black">#000000</color>
+    <color name="btnbackground">#05a76b</color>
+    <color name="btnbackground1">#000</color>
+    <color name="white">#ffffff</color>
+    <color name="transperent">#00ffffff</color>
+    <color name="transperent_black">#99000000</color>
+    <color name="transperent_white">#20ffffff</color>
+    <color name="weightcolor">#ff8a65</color>
+    <color name="weightcolor1">#dc7858</color>
+    <color name="smoking_cost">#e44035</color>
+    <color name="smoking_cost1">#e44035</color>
+    <color name="smoking_risk">#e2741f</color>
+    <color name="smoking_risk1">#cb681b</color>
+    <color name="selected_background_calendar">#50ffffff</color>
+    <color name="selected_text_color">#ffffff</color>
+
+    <!--    workout-->
+
+    <color name="mainactivity_text">#ff3c494f</color>
+    <color name="colorgrey">#ffe5e4e4</color>
+    <color name="lightestgrey">#ff8d8d8d</color>
+    <color name="textColor">#ffb4bcc0</color>
+
+    <!--    walk and step-->
+
+    <color name="darkgrey">#757575</color>
+    <color name="transparent">#00000000</color>
+    <color name="middlegrey">#A8A8A8</color>
+    <color name="green">#388E3C</color>
+    <color name="gray">#ececec</color>
+    <color name="dot_dark_screen">#77ae36</color>
+    <color name="dot_light_screen">#448bb2</color>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+    </array>
+
+</resources>

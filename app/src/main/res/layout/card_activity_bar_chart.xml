@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        card_view:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/period"
+                    style="@style/CardViewPrimaryTitle" />
+
+                <TextView
+                    android:id="@+id/periodSubtitle"
+                    style="@style/CardViewSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period"
+                    android:textAlignment="center"
+                    android:text="@string/activity_chart_summary_subtitle" />
+
+                <ImageButton
+                    android:id="@+id/periodMoreButton"
+                    style="@style/SimpleImageButton"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/period"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_more_vert_black_24dp" />
+
+            </RelativeLayout>
+            <com.github.mikephil.charting.charts.CombinedChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="24dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginBottom="5dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:weightSum="3">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/b_steps"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/tab_round"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Steps"-->
+<!--                android:textColor="@color/darkgrey" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/b_distance"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/tab_round"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Distance"-->
+<!--                android:textColor="@color/darkgrey" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/b_calories"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/tab_round"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Calories"-->
+<!--                android:textColor="@color/darkgrey" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </RelativeLayout>-->
+
+</LinearLayout>

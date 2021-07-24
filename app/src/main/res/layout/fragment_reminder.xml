@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color">
+
+
+    <RelativeLayout
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="-5dp"
+        android:background="@mipmap/banner_reminder">
+
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/text_20"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/reminder_22" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Reminder"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18"
+            android:layout_below="@+id/i1"
+            android:layout_marginLeft="@dimen/text_20"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gothic"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/banner1"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <RelativeLayout
+            android:id="@+id/relaa1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp">
+
+            <ImageView
+                android:id="@+id/set_water"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/set_water" />
+
+            <ImageView
+                android:id="@+id/butoon_plus"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/set_water"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-60dp"
+                android:layout_marginRight="25dp"
+                android:background="@mipmap/add_22" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/relaa1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp">
+
+            <ImageView
+                android:id="@+id/set_medicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/set_medication" />
+
+            <ImageView
+                android:id="@+id/butoon_plus1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/set_medicion"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-60dp"
+                android:layout_marginRight="25dp"
+                android:background="@mipmap/add_22" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

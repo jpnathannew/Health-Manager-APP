@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/calculator_banner_2">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:src="@mipmap/left_arrow" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewone"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_marginLeft="@dimen/text_15"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="@dimen/text_15"
+        android:orientation="horizontal"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dip">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ad_layout"
+            android:layout_below="@+id/tv_lean_body_mass">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/cardviewone"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rel12"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/a3_grad">
+
+                        <ImageView
+                            android:id="@+id/iv_lean_body_mass"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/img_lean_body_mass" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_lean_body_mass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel12"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:text="@string/lean_body_mass"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_16" />
+
+                <LinearLayout
+                    android:id="@+id/ll_bmr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <EditText
+                            android:id="@+id/et_height"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/corner2"
+                            android:hint="@string/Enter_Height"
+                            android:imeOptions="actionPrevious"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/textsize_14" />
+
+                        <TextView
+                            android:id="@+id/tv_heightunit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/corner2"
+                            android:drawableRight="@mipmap/down"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/cm"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/textsize_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <EditText
+                            android:id="@+id/et_weight"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/corner2"
+                            android:hint="@string/Enter_Weight"
+                            android:imeOptions="actionPrevious"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/textsize_14" />
+
+                        <TextView
+                            android:id="@+id/tv_weightunit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/corner2"
+                            android:drawableRight="@mipmap/down"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/lbs"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/textsize_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llbodyfat"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_genderunit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:background="@drawable/corner2"
+                            android:gravity="fill"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"
+                            android:text="@string/Male"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/textsize_14"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_gender"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:background="@drawable/corner2"
+                            android:drawableRight="@mipmap/down"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:paddingLeft="10dp"
+                            android:text="@string/Male"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/textsize_14" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_search_bmr"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/a3_grad"
+                        android:gravity="center"
+                        android:text="@string/calculate_lean_body_mass"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/ad_layout"
+        layout="@layout/native_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

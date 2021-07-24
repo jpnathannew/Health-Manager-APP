@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "190439038769",
+    "project_id": "home-workout-and-diet-plan",
+    "storage_bucket": "home-workout-and-diet-plan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190439038769:android:3924e820507ba217fa9a10",
+        "android_client_info": {
+          "package_name": "com.homeworkouts.fitnessloseweight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190439038769-n7gks675qhm2mfitakvrn9h2i4e6fqno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWWUQWGulDLiqtGHxDoETuxSMxo_cXmm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190439038769-n7gks675qhm2mfitakvrn9h2i4e6fqno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

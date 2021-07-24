@@ -1,0 +1,921 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Home Workout Fitness and Diet plan</string>
+
+
+    <string name="admob_app_id">ca-app-pub-2329262901732245~1848049239</string>
+
+    <string name="banner_ad">ca-app-pub-2329262901732245/5595722558</string>
+    <string name="g_native">ca-app-pub-2329262901732245/9858648612</string>
+    <string name="interstitial_key">ca-app-pub-2329262901732245/5210146530</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="email">Gmail</string>
+
+    <string name="pref_notification_message_value">Hey… Lets drink some water…</string>
+    <string name="add_info_text">Please provide some information to customize the experience for you…!!</string>
+    <string name="str_continue">Continue</string>
+    <string name="enter_your_name_hint">Enter your name</string>
+    <string name="age_hint">Enter your age</string>
+    <string name="weight_hint">Enter your weight in Kg</string>
+    <string name="custom_intake_hint">Enter your custom intake target in ml</string>
+    <string name="workout_hint">Your daily work out time in min/day</string>
+    <string name="wakeup_hint">Your wake up time</string>
+    <string name="sleeping_hint">Your Sleep time</string>
+    <string name="tagline_text">Lets keep you hydrated…</string>
+    <string name="get_started">Get Started</string>
+    <string name="edit_info_text">Edit Your Info</string>
+    <string name="update">Update</string>
+    <string name="notif_setting_header">Notification Settings</string>
+    <string name="notif_messsage_hint">Notification Message</string>
+    <string name="notif_tone_hint">Notification Tone</string>
+    <string name="notif_freq_hint">Notification Frequency</string>
+    <string name="walkthrough_text_one">Water is 60 percent of your body weight. Your body depends on water to
+        survive.
+    </string>
+    <string name="walkthough_text_two">Lack of water can lead to dehydration. Even mild dehydration can drain you and
+        make you tired.
+    </string>
+    <string name="walkthrough_text_three">Every cell, tissue and organ in your body needs water to work properly.
+    </string>
+
+    <string name="Abnormally_Slim">Abnormally Slim</string>
+    <string name="Acceptable">Acceptable</string>
+    <string name="Active">Active</string>
+    <string name="Adults">Adults</string>
+    <string name="Aerobic_exercise">Aerobic exercise</string>
+    <string name="Age">Age</string>
+    <string name="Age_Group_Under17">Age Group : Under 17</string>
+    <string name="Age_Group_Under35">Age Group : Under 35</string>
+    <string name="Age_Group_Under35over">Age Group : 35 and over</string>
+    <string name="Age_of_Child_in_Months">Age of Child in Months</string>
+    <string name="Alcohol_Effects">Alcohol Effects</string>
+    <string name="Alcohol_Effects_by_BAC_level">Alcohol Effects by BAC level</string>
+    <string name="Alcohol_level">Alcohol \10 level%</string>
+    <string name="Apathy_impaired">Apathy, impaired consciousness, stupor, significantly decreased response to stimulation, severe muscular incoordination, inability to stand or walk, vomiting, incontinence of urine and feces</string>
+    <string name="Approximate_Calories_Burned">Approximate Calories Burned</string>
+    <string name="Athletes">Athletes</string>
+    <string name="Average">Average</string>
+    <string name="Average_individual_appears_normal">Average individual appears normal</string>
+    <string name="BAC_level">Your Blood Alcohol Content level is</string>
+    <string name="Bicycling">Bicycling</string>
+    <string name="Bill_Rogers_move_over">Bill Rogers move over!</string>
+    <string name="Blood_Alcohol_Content">Blood Alcohol Content</string>
+    <string name="Blood_Donation_Time_Calculator">Blood Donation Time Calculator</string>
+    <string name="Blood_Pressure_Calculator">Blood Pressure Calculator</string>
+    <string name="Blood_Pressure_Category">Blood Pressure Category</string>
+    <string name="Blood_Sugar">Your Blood Sugar Level is :</string>
+    <string name="Blood_Sugar_Conversion">Blood Sugar Conversion</string>
+    <string name="Blood_Sugar_level_mg">Blood sugar level in mg/dl</string>
+    <string name="Blood_Sugar_level_mmol">Blood Sugar level in mmol/l</string>
+    <string name="Body_Fat_Calculator">Body Fat Calculator</string>
+    <string name="Body_Fat_Percentage_Comparison_Table">Body Fat Percentage Comparison Table</string>
+    <string name="Body_Fat_Percentage_for_Men_and_Women">Body Fat Percentage for Men and Women</string>
+    <string name="Body_Mass_Index_Calculator">Body Mass Index Calculator</string>
+    <string name="Body_frame_size">Body Frame Size Calculator</string>
+    <string name="Body_frame_text">Your Body Frame Size is</string>
+    <string name="Body_frame_text_large">Large</string>
+    <string name="Body_frame_text_medium">Medium</string>
+    <string name="Body_frame_text_small">Small</string>
+    <string name="Bruce_trade_mill">Your Bruce trade mill is :</string>
+    <string name="Burn_Calories">Burn Calories</string>
+    <string name="Calculate_BMI">Calculate BMI</string>
+    <string name="Calculate_BMR">Calculate Basal Metabolic Rate</string>
+    <string name="Calculate_Blood_Alcohol_Content">Calculate Blood Alcohol Content</string>
+    <string name="Calculate_Blood_Pressure">Calculate Blood Pressure</string>
+    <string name="Calculate_Blood_Sugar">Calculate Blood Sugar</string>
+    <string name="Calculate_Blood_volume">Calculate Blood Volume</string>
+    <string name="Calculate_Body_Fat">Calculate Body Fat</string>
+    <string name="Calculate_Bruce_Trade_Mill">Calculate Bruce Trade Mill</string>
+    <string name="Calculate_Daily_Calories_Intake">Calculate Daily Calories Intake</string>
+    <string name="Calculate_Estimated_Height">Calculate Estimated Height</string>
+    <string name="Calculate_Estimated_Weight">Calculate Estimated Weight</string>
+    <string name="Calculate_Expected_Date_of_Delivery">Calculate Expected Date of Delivery</string>
+    <string name="Calculate_Head_Circumference">Calculate Head Circumference</string>
+    <string name="Calculate_Heart_Rate">Calculate Heart Rate</string>
+    <string name="Calculate_Next_Eligible_Date">Calculate Next Eligible Date</string>
+    <string name="Calculate_RMR">Calculate Resting Metabolic Rate</string>
+    <string name="Calculate_Smoking_Risk">Calculate Smoking Risk</string>
+    <string name="Calculate_Smoking_cost">Calculate Smoking cost</string>
+    <string name="Calculate_Your_Total_Calorie_Burn">Calculate Your Total Calorie Burn</string>
+    <string name="Calculate_childs_Predicted_Height">Calculate child\'s Predicted Height</string>
+    <string name="Calculate_next_menstrual">Calculate next menstrual &amp; ovulation date</string>
+    <string name="Calculate_water_intake">Calculate water intake</string>
+    <string name="Calorie_Requirements_a_Day_for_Men">Calorie Requirements a Day for Men</string>
+    <string name="Calorie_Requirements_a_Day_for_Women">Calorie Requirements a Day for Women</string>
+    <string name="Calories_Burned_Calculator">Calories Burned Calculator</string>
+    <string name="Calories_burned">Calories burned</string>
+    <string name="Calories_per_day">Calories per day</string>
+    <string name="Calories_per_day_will_cause_you_to_Lose_one_pound_a_week">Calories per day will cause you to Lose one pound a week.</string>
+    <string name="Calories_per_day_will_cause_you_to_gain_one_pound_a_week">Calories per day will cause you to gain one pound a week.</string>
+    <string name="Children">Children</string>
+    <string name="Childrens_Height_Predictor">Children\'s Height Predictor</string>
+    <string name="Classification">Classification</string>
+    <string name="Confusion_dizziness">Confusion, dizziness, exaggerated emotions (anger, fear, grief) impaired visual perception, decreased pain sensation, impaired balance, staggering gait, slurred speech, moderate muscular incoordination</string>
+    <string name="Daily_Calories_Intake_Calculator">Daily Calories Intake Calculator</string>
+    <string name="Daily_Water_Intake">Your Daily Water Intake is :</string>
+    <string name="Date_of_Next_donation">Date of Next donation</string>
+    <string name="Date_of_last_Menstrual">Date of last Menstrual</string>
+    <string name="Date_of_last_donation">Date of last donation</string>
+    <string name="Date_of_next_Menstrual">Date of next Menstrual</string>
+    <string name="Date_of_the_first_day_of_your_last_period_is">Date of the first day of your last period is</string>
+    <string name="Day">Day</string>
+    <string name="Days">Days</string>
+    <string name="Days_21">21 Days</string>
+    <string name="Diastolic_Blood_Pressure">Diastolic Blood Pressure</string>
+    <string name="Diastolic_mmHg">Diastolic mmHg</string>
+    <string name="Drink_volume">Drink volume ( ml )</string>
+    <string name="Emotional_instability">Emotional instability, loss of critical judgment, impairment of memory and comprehension, decreased sensory response, mild muscular incoordination</string>
+    <string name="Enter_Age">Enter Age</string>
+    <string name="Enter_Alcohol_level">Enter Alcohol level</string>
+    <string name="Enter_Blood_sugar_value">Enter Blood sugar value</string>
+    <string name="Enter_Distance_You_Run">Enter Distance You Run</string>
+    <string name="Enter_Drink_volume">Enter Drink volume</string>
+    <string name="Enter_Fathers_Height">Enter Father\'s Height</string>
+    <string name="Enter_Heart_Rate">Enter Heart Rate</string>
+    <string name="Enter_Height">Enter Height</string>
+    <string name="Enter_Mothers_Height">Enter Mother\'s Height</string>
+    <string name="Enter_Systolic_Pressure">Enter Systolic Pressure(Upper)mmHg</string>
+    <string name="Enter_Weight">Enter Weight</string>
+    <string name="Enter_diastolic_Pressure">Enter diastolic Pressure(Upper)mmHg</string>
+    <string name="Enter_diastolic_value">Enter diastolic value</string>
+    <string name="Enter_distance_you_run">Enter distance you run</string>
+    <string name="Enter_no_of_cigarattes_per_day">Enter no of cigarattes per day</string>
+    <string name="Enter_no_of_cigarettes">Enter no of cigarettes</string>
+    <string name="Enter_no_of_cigarettes_in_pack">Enter no of cigarettes in pack</string>
+    <string name="Enter_no_of_cigarettes_smoked_per_day">Enter no of cigarettes smoked per day</string>
+    <string name="Enter_price_per_packes_in_Rs">Enter price per packes in Rs</string>
+    <string name="Enter_systolic_value">Enter systolic value</string>
+    <string name="Enter_time">Enter time</string>
+    <string name="Enter_time_in_minute">Enter time in minute</string>
+    <string name="Enter_time_passed_sence_drinking">Enter time passed sence drinking</string>
+    <string name="Enter_weight">Enter weight</string>
+    <string name="Enter_your_resting_heart_rate">Enter your resting heart rate</string>
+    <string name="Essential_Fat">Essential Fat</string>
+    <string name="Estimated_Expected_Date_of_Delivery">Estimated Expected Date of Delivery</string>
+    <string name="Estimated_Head_Circumference">Estimated Head Circumference</string>
+    <string name="Estimated_Height">Estimated Height</string>
+    <string name="Estimated_Weight">Estimated Weight</string>
+    <string name="Exercise">Exercise</string>
+    <string name="Extremely_Obese">Extremely Obese</string>
+    <string name="Extremely_Obese_BMI">Extremely Obese BMI :</string>
+    <string name="Extremely_Overweight">Extremely Overweight/Obese</string>
+    <string name="Extremely_slim">Extremely slim</string>
+    <string name="Fat_Level">Fat Level</string>
+    <string name="Feet_At_21_Years">Feet At 21 Years</string>
+    <string name="Female">Female</string>
+    <string name="Fitness">Fitness</string>
+    <string name="Gardening">Gardening</string>
+    <string name="Great_Your_a_runner_keep_it_up">Great! Your a runner.....keep it up!</string>
+    <string name="Healthy">Healthy, Normal, Attractive Weight</string>
+    <string name="Heart_Rate">Heart Rate</string>
+    <string name="Heart_Rate_Calculator">Heart Rate Calculator</string>
+    <string name="Heavy">Heavy</string>
+    <string name="High">High</string>
+    <string name="High_Blood_Pressure_Stage_1">High Blood Pressure (Hypertension) Stage 1</string>
+    <string name="High_Blood_Pressure_Stage_2">High Blood Pressure (Hypertension) Stage 2</string>
+    <string name="Highly_Obese">Highly Obese</string>
+    <string name="Hour">Hour</string>
+    <string name="Hypertension_Stage1">Hypertension Stage 1</string>
+    <string name="Hypertension_Stage2">Hypertension Stage 2</string>
+    <string name="Hypertensive_Crisis">Hypertensive Crisis</string>
+    <string name="Hypertensive_Crisis_Emergency_care_needed">Hypertensive Crisis.Emergency care needed</string>
+    <string name="Ideal_Body_Weight_Calculator">Ideal Body Weight Calculator</string>
+    <string name="Intensity">Intensity</string>
+    <string name="Internet_connection_not_available">Internet connection not available</string>
+    <string name="Jogging">Jogging</string>
+    <string name="Karvonen_Formula">Karvonen Formula for Heart Rate Calculator \10 (Heart Rate Reserve Method)</string>
+    <string name="Kids_Growth_Calculator">Kids Growth Calculator</string>
+    <string name="Level">Level</string>
+    <string name="Light">Light</string>
+    <string name="Low">Low</string>
+    <string name="Low_Activity">Low Activity</string>
+    <string name="Male">Male</string>
+    <string name="Medium">Medium</string>
+    <string name="Men_fat">Men(%)</string>
+    <string name="Menstrual_Ovulation_Calculator">Menstrual Ovulation Calculator</string>
+    <string name="Mild_euphoria">Mild euphoria,talkativeness, decreased inhibitions, decreased attention, impaired judgment, increased reaction time</string>
+    <string name="Minute">Minute</string>
+    <string name="Moderate">Moderate</string>
+    <string name="Month">Month</string>
+    <string name="Month_0">0Month</string>
+    <string name="Monthly_Expense">Monthly Expense</string>
+    <string name="More_From_Us">More From Us</string>
+    <string name="Nice_run_but_you_can_do_better">Nice run, but you can do better.</string>
+    <string name="Normal">Normal</string>
+    <string name="Normal_Blood_Pressure">Normal Blood Pressure</string>
+    <string name="Obese">Obese</string>
+    <string name="Obese_BMI">Obese BMI :</string>
+    <string name="Overweight">Overweight</string>
+    <string name="Overweight_BMI">Overweight BMI :</string>
+    <string name="Please_select_valid_date">Please select valid date</string>
+    <string name="Pregnancy_Due_Date_Calculator">Pregnancy Due Date Calculator</string>
+    <string name="Prehypertension">Prehypertension</string>
+    <string name="RESULT">RESULT</string>
+    <string name="Recommended_BMI">Recommended BMI:</string>
+    <string name="Recommended_BMI_Value">Recommended BMI Value</string>
+    <string name="Recommended_Bodyfat">Recommended Bodyfat</string>
+    <string name="Running">Running</string>
+    <string name="Sedentary">Sedentary</string>
+    <string name="Selct_cycle_days">Selct cycle days:</string>
+    <string name="Select_Child_Gender">Select Child\'s Gender :</string>
+    <string name="Select_Date">Select Date</string>
+    <string name="Select_Your_Bodyframe">Select Your Bodyframe :</string>
+    <string name="Select_Your_Gender">Select Your Gender :</string>
+    <string name="Select_date_of_Last_Menstrual_Period">Select date of Last Menstrual Period :</string>
+    <string name="Select_date_of_last_donation">Select date of last donation :</string>
+    <string name="Select_first_day_of_last_menstrual">Select first day of last menstrual:</string>
+    <string name="Select_your_activity_level">Select your activity level :</string>
+    <string name="Slender">Slender and Healthy</string>
+    <string name="Smoking_Cost">Smoking Cost</string>
+    <string name="Smoking_Risk">Smoking Risk</string>
+    <string name="Swimming">Swimming</string>
+    <string name="Systolic_Blood_Pressure">Systolic Blood Pressure(Upper)</string>
+    <string name="Systolic_mmHg">Systolic mmHg</string>
+    <string name="Target_Heart_Rate_Zone_Calculator">Target Heart Rate Zone Calculator</string>
+    <string name="The_fact_that_you_smoked">The fact that you smoked</string>
+    <string name="This_means_that_your_body_will_burn">This means that your body will burn</string>
+    <string name="Time_passed_sence_drinking">Time passed sence drinking</string>
+    <string name="To_gain_weight_by">To gain weight by</string>
+    <string name="To_lose_weight">To lose weight</string>
+    <string name="To_maintain_current_weight">To maintain current weight</string>
+    <string name="Unconsciousness">Unconsciousness, depressed or abolished reflexes, abnormal body temperature, coma; possible death from respiratory paralysis</string>
+    <string name="Under_Weight">Under Weight</string>
+    <string name="Very_High">Very High</string>
+    <string name="Very_Low">Very Low</string>
+    <string name="Very_good_Push_above_next_time">Very good! Push above next time.</string>
+    <string name="View_BMI_Chart">View BMI Chart</string>
+    <string name="View_Blood_Pressure_Chart">View Blood Pressure Chart</string>
+    <string name="View_Blood_Sugar_level_Chart">View Blood Sugar level Chart</string>
+    <string name="View_Body_Fat_Chart">View Body Fat Chart</string>
+    <string name="View_Chart">View Chart</string>
+    <string name="View_Heart_Rate_Chart">View Heart Rate Chart</string>
+    <string name="Walking">Walking</string>
+    <string name="Water_IntakeCalculator">Water IntakeCalculator</string>
+    <string name="Weekly_Expense">Weekly Expense</string>
+    <string name="Weight">Weight</string>
+    <string name="When_quit_smoking">if quit smoking\10 when was that</string>
+    <string name="When_start_smoking">When did you \10start smoking</string>
+    <string name="Women_fat">Women(%)</string>
+    <string name="Yearly_Expense">Yearly Expense</string>
+    <string name="You_better_start_working">You better start working!</string>
+    <string name="You_need">You need</string>
+    <string name="Your_BMI_is">Your BMI is</string>
+    <string name="Your_BMR_is">Your Basal Metabolic Rate is</string>
+    <string name="Your_BMR_value_is">Your Daily Calorie intake is :</string>
+    <string name="Your_Body_Fat_is">Your Body Fat is</string>
+    <string name="Your_Childs_Predicted_Height">Your Child\'s Predicted Height is :</string>
+    <string name="Your_RMR_is">Your Resting Metabolic Rate is</string>
+    <string name="Your_bloodvolume_is">Your Blood Volume is</string>
+    <string name="Your_ideal_body_weight_is">Your ideal body weight is :</string>
+    <string name="Your_ideal_body_weight_range_is">Your ideal body weight range is :</string>
+    <string name="Your_my_hero_Have_a_jelly_doughnut">Your my hero! Have a jelly doughnut.!</string>
+    <string name="Your_next_ovulation_period_is">Your next ovulation period is</string>
+    <string name="_100_calories_burned_in_20min">100 calories burned in 20 min</string>
+    <string name="_100_calories_burned_in_30min">100 calories burned in 30 min</string>
+    <string name="_100_calories_burned_per_mile">100 calories burned per mile</string>
+    <string name="_120_calories_burned_per_mile">120 calories burned per mile</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_font_family_body_1_material">sans-serif</string>
+    <string name="abc_font_family_body_2_material">sans-serif-medium</string>
+    <string name="abc_font_family_button_material">sans-serif-medium</string>
+    <string name="abc_font_family_caption_material">sans-serif</string>
+    <string name="abc_font_family_display_1_material">sans-serif</string>
+    <string name="abc_font_family_display_2_material">sans-serif</string>
+    <string name="abc_font_family_display_3_material">sans-serif</string>
+    <string name="abc_font_family_display_4_material">sans-serif-light</string>
+    <string name="abc_font_family_headline_material">sans-serif</string>
+    <string name="abc_font_family_menu_material">sans-serif</string>
+    <string name="abc_font_family_subhead_material">sans-serif</string>
+    <string name="abc_font_family_title_material">sans-serif-medium</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+
+    <string name="app_name_feedback">Health Calculator Pro</string>
+
+    <string name="arabic">Arabic</string>
+    <string name="backtext">Click BACK again to exit</string>
+    <string name="bai_female">Body Adiposity Index for Female</string>
+    <string name="bai_healthy">Healthy</string>
+    <string name="bai_is">The Body Adiposity Index is :</string>
+    <string name="bai_male">Body Adiposity Index for Male</string>
+    <string name="bai_title">Body Adiposity Index Calculator</string>
+
+    <string name="base64">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqpT5VjzACxnM3QpZVYzu4yGF7xlSlRULtMxZkXzDDLN3p9eGUJwIRAM8a5FnYXW/LbyF6GSW94juXPoVZsODku6z2AIRIogHU2VeGZfDCtNmtffpYy7ddSZs9mjMFCBn/N9dAE+Jtanc+NZDYHmDJP4VzpE5SC/2TolJObSTZYVYjcxymUkLdWyZh58EpCx+cnZGzxVwup+ow2BpPjGAo3HLjQCGqS+1Uk2TbaTlhUFAnbp0PYJzZa13NFxiHN2dmHDjlLNo32+MpfOMGI0jmBzAiBRk47JDQH65qIYo4IqBgjIw2Txp7l+LetzmK5euZAUZewrvbqJZy5gytLqsYQIDAQAB</string>
+    <string name="blood_volume_Calculator">Blood Volume Calculator</string>
+    <string name="bmr_Calculator">BMR Calculator</string>
+    <string name="body_surface_Area">Body Surface Area Calculator</string>
+
+    <string name="cal_per_day">calories/day</string>
+    <string name="cal_title">Calculate Body Adiposity Index</string>
+    <string name="calculate_body_frame">Calculate Body Frame Size</string>
+    <string name="calculate_body_surface_Area">Calculate Body Surface Area</string>
+    <string name="calculate_chr">Calculate Chest To Hip Ratio</string>
+    <string name="calculate_colestrol">Calculate Cholestrol Ratio</string>
+    <string name="calculate_lean_body_mass">Calculate Lean Body Mass</string>
+    <string name="calculate_waist_height_ratio">Calculate Waist Height Ratio</string>
+    <string name="calculate_whr">Calculate Waist To Hip Ratio</string>
+    <string name="calories">calories</string>
+    <string name="calories_each_day_if_you_engage_in_no_activity_for_the_entire_day">calories each day if you engage in no activity for the entire day.</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="chinesesimp">Chinese Simplified</string>
+    <string name="chinesetrad">Chinese Traditional</string>
+    <string name="cholestrol_ratio_calc">Cholestrol Ratio Calculator</string>
+    <string name="chr">Chest To Hip Ratio Calculator</string>
+    <string name="chr_percentage">Your Chest To Hip Ratio Percentage is :</string>
+    <string name="cigarettes_per_day_for_a_period_of">cigarettes per day for a period of</string>
+    <string name="cm">cm</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">%1$s won\'t work unless you enable Google Play services.</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">%1$s won\'t run without Google Play services, which are missing from your device.</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s won\'t run without Google Play services, which are not supported by your device.</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">%1$s won\'t run unless you update Google Play services.</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">%1$s won\'t run without Google Play services, which are currently updating.</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+
+  <string name="english">English</string>
+    <string name="enter_chest">Enter Chest Circumference</string>
+    <string name="enter_hdl">Enter HDL</string>
+    <string name="enter_hip">Enter Hip Circumference</string>
+    <string name="enter_ldl">Enter LDL</string>
+    <string name="enter_triglyceride">Enter Triglyceride</string>
+    <string name="enter_waist">Enter Waist Circumference</string>
+    <string name="enter_wrist">Enter Wrist</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_url">contact@loopbots.com</string>
+    <string name="feet">feet</string>
+    <string name="font_bold">fonts/proximanova_bold.otf</string>
+    <string name="font_light">fonts/proximanova_light.otf</string>
+    <string name="french">French</string>
+    <string name="friday">Fri</string>
+    <string name="gcm_defaultSenderId">776761283214</string>
+    <string name="german">German</string>
+    <string name="give_feedback">Please give your feedback</string>
+    <string name="google_api_key">AIzaSyBA6dCyP4VrqVSor7tAUjWw8FThJlR6N48</string>
+    <string name="google_app_id">1:776761283214:android:f33b1f2bbbf1b489</string>
+    <string name="google_crash_reporting_api_key">AIzaSyBA6dCyP4VrqVSor7tAUjWw8FThJlR6N48</string>
+    <string name="google_storage_bucket">admob-app-id-9807796839.appspot.com</string>
+    <string name="health_risk">Your probable health risk is :</string>
+    <string name="health_risk_title">Health Risk</string>
+    <string name="heart_rate">Your Estimated maximum heart rate is :</string>
+    <string name="hour">Hour</string>
+    <string name="hours_of_your_life">hours of your life.</string>
+    <string name="inch">inch</string>
+    <string name="install_now_btn">Install Now</string>
+
+    <string name="invite_friends_share_other_message">Hi,\10Check Out Health Calculator Pro.\10 Download Now https://play.google.com/store/apps/details?id=com.pragma.offshore.bmicalculator</string>
+    <string name="italian">Italian</string>
+    <string name="japanese">Japanese</string>
+    <string name="kg">kg</string>
+    <string name="km">km</string>
+    <string name="korean">Korean</string>
+    <string name="language">Change Language</string>
+    <string name="language_alert">Are you sure want to change Language?</string>
+    <string name="later_btn">Later</string>
+    <string name="lbs">lbs</string>
+    <string name="lean_body_mass">Lean Body Mass Calculator</string>
+    <string name="lightly_active">I am lightly active (light exercise or sports 1-3 days per week)</string>
+    <string name="liter">liter</string>
+    <string name="lower_result">Lower Result :</string>
+    <string name="m2">m2</string>
+    <string name="means_that_cigarettes_have_taken">days, means that cigarettes have taken</string>
+    <string name="mg">mg/dl to mmol/l</string>
+    <string name="mgdl">mg/dl</string>
+    <string name="mgol_a">mg/ol/L</string>
+    <string name="miles">miles</string>
+    <string name="mmol">mmol/l to mg/dl</string>
+    <string name="mmol_a">mm/ol/L</string>
+    <string name="moderately_active">I am moderately active (moderate exercise or sports 3-5 days per week)</string>
+    <string name="monday">Mon</string>
+    <string name="more_from_us">http://loopbots.com/moreapps/android.html</string>
+    <string name="morefromus_url">http://moreapps.loopbots.com/android.html</string>
+    <string name="no">no</string>
+    <string name="notificationtext1">Checkout how healthy you are using all health parameter ?</string>
+    <string name="notificationtext2">What is your BMI ? Calculate now.</string>
+    <string name="notificationtext3">Have you done your weakly health checkup ?</string>
+    <string name="ok">ok</string>
+    <string name="password_toggle_content_description">Toggle password visibility</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="project_id">admob-app-id-9807796839</string>
+    <string name="purchased">Purchased</string>
+    <string name="rate">Rate this app</string>
+    <string name="rate_app">Rate This App</string>
+    <string name="recommanded_app">Recommended Apps</string>
+    <string name="recommendedapptext">Recommended Apps</string>
+    <string name="remove_ad">Remove Ads -</string>
+    <string name="rmr_Calculator">RMR Calculator</string>
+    <string name="rta_dialog_cancel">Later</string>
+    <string name="rta_dialog_message">If you enjoy using this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thank you for your support!</string>
+    <string name="rta_dialog_no">No, thanks</string>
+    <string name="rta_dialog_ok">Rate now</string>
+    <string name="russian">Russian</string>
+    <string name="s1">Save image</string>
+    <string name="s2">Allow Ad to store image in Picture gallery?</string>
+    <string name="s3">Accept</string>
+    <string name="s4">Decline</string>
+    <string name="s5">Create calendar event</string>
+    <string name="s6">Allow Ad to create a calendar event?</string>
+    <string name="s7">Test Ad</string>
+    <string name="saturday">Sat</string>
+    <string name="search">Search</string>
+    <string name="search_menu_title">Search</string>
+    <string name="sedentary">I am sedentary (little or no exercise).</string>
+    <string name="share">Share</string>
+    <string name="spanish">Spanish</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="sunday">Sun</string>
+    <string name="super_active">I am super active (very hard exercise or sports and a physical job or 2x training)</string>
+    <string name="thrusday">Thu</string>
+    <string name="title_activity_about_us">About us</string>
+    <string name="transition1">home_transition</string>
+    <string name="transition2">textview_transition</string>
+    <string name="transition3">imageview_transition</string>
+    <string name="tuesday">Tue</string>
+    <string name="upper_result">Upper Result :</string>
+    <string name="version">Version</string>
+    <string name="very_active">I am very active (hard exercise or sports 6-7 days per week)</string>
+    <string name="view_chart">View Chart</string>
+    <string name="waist_height_ratio">Waist To Height Ratio Calculator</string>
+    <string name="wednesday">Wed</string>
+    <string name="whr">Waist To Hip Ratio Calculator</string>
+    <string name="whr_chart">Waist-to-hip ratio chart</string>
+    <string name="whr_chart_man1">0.95 or lower</string>
+    <string name="whr_chart_man2">0.96–1.0</string>
+    <string name="whr_chart_man3">1.0 or higher</string>
+    <string name="whr_chart_woman1">0.80 or lower</string>
+    <string name="whr_chart_woman2">0.81–0.85</string>
+    <string name="whr_chart_woman3">0.86 or higher</string>
+    <string name="whr_is">Your waist to hip ratio is :</string>
+    <string name="yes">yes</string>
+    <string name="your_Body">Your Body is :</string>
+    <string name="your_Waist_Height_Ratio">Your Waist to Height Ratio is :</string>
+    <string name="your_body_surface_Area">Your Body Surface Area is</string>
+    <string name="your_cholestrol">Your Cholestrol Ratio is</string>
+    <string name="your_chr">Your Chest To Hip Ratio is :</string>
+    <string name="your_lean_body_mass">Your Lean Body Mass is</string>
+
+
+    <!--    pill_reminder-->
+    <string name="title_activity_add_reminder">Add Medication</string>
+    <string name="title_activity_edit_reminder">Edit Medication</string>
+    <string name="add_Medicion">Medication Name</string>
+    <string name="details">Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_off">Off</string>
+    <string name="repeat_no">Repetition Interval </string>
+    <string name="repeat_type">Type of Repetitions</string>
+
+    <string name="action_discard_reminder">Discard Reminder</string>
+    <string name="action_save_reminder">Save Reminder</string>
+    <string name="my_medication">Medication Manager</string>
+
+    <string name="no_reminders">Click on the plus button below to begin creating your Medication reminders!</string>
+    <string name="pill_notification">Hey… Take a Medicion…</string>
+
+
+    <!--    work out-->
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="cycles">cycles</string>
+    <string name="day">Day</string>
+    <string name="day1">Day 1</string>
+    <string name="day10">Day 10</string>
+    <string name="day11">Day 11</string>
+    <string name="day12">Day 12</string>
+    <string name="day13">Day 13</string>
+    <string name="day14">Day 14</string>
+    <string name="day15">Day 15</string>
+    <string name="day16">Day 16</string>
+    <string name="day17">Day 17</string>
+    <string name="day18">Day 18</string>
+    <string name="day19">Day 19</string>
+    <string name="day2">Day 2</string>
+    <string name="day20">Day 20</string>
+    <string name="day21">Day 21</string>
+    <string name="day22">Day 22</string>
+    <string name="day23">Day 23</string>
+    <string name="day24">Day 24</string>
+    <string name="day25">Day 25</string>
+    <string name="day26">Day 26</string>
+    <string name="day27">Day 27</string>
+    <string name="day28">Day 28</string>
+    <string name="day29">Day 29</string>
+    <string name="day3">Day 3</string>
+    <string name="day30">Day 30</string>
+    <string name="day4">Day 4</string>
+    <string name="day6">Day 6</string>
+    <string name="day7">Day 7</string>
+    <string name="day8">Day 8</string>
+    <string name="day9">Day 9</string>
+
+    <string name="default_notification_channel_name">30-Day workout</string>
+    <string name="default_web_client_id">189479422266-endj819hpiq9i6njiu2sb9imu6sopqi7.apps.googleusercontent.com</string>
+    <string name="desc_cat_cow_stretch">Initially, be in tabletop position. Inhale, move your belly towards the floor, lift your chin up in the cow pose. Now, exhale by moving your back and belly upwards towards the ceiling in the cat pose. Repeat it.</string>
+    <string name="desc_downward_facing_dog_pose">Lie down with your face, towards the ground and hands on your side. Now, with the support of your hands, lift the body and move to the table top position. Exhale and lift your hip towards the sky.</string>
+    <string name="desc_dry_land_swim">Lie down with your face, towards the ground and hands stretched forward. Lift your right arm and left leg above the ground. Be in this position. Repeat the same on the other side.</string>
+    <string name="desc_forward_spine_stretch">Sit down on the floor with your legs forward . Now stretch your arms forward. Then return back to the initial position.</string>
+    <string name="desc_hands_on_the_head_bow_down">Keep your hands on the back of your head. Now bend forward. Then return back to the initial position.</string>
+    <string name="desc_hanging_exercise">Initially, hang on a pole. Now raise both your legs. Then return back to the initial position.</string>
+    <string name="desc_hopping_with_one_leg">Initially rest on one leg. Then hop as high as you can, around 10 to 15 times. Repeat it on the other side.</string>
+    <string name="desc_pelvic_shift">Lie on your back with your legs tilted and arms by the side. Now raise your hips and be in this position for some time. Then lower your hips.</string>
+    <string name="desc_pilates_roll_over">Lie on your back with your arms by the side. Now raise your legs together at 90 degree angle. Then exhale, lower your body to a horizontal position and further. Caution : While lowering your body, do not try to stretch beyond your limits. If you feel any discomfort or pain, immediately consult a doctor.</string>
+    <string name="desc_plank">Be on your toes and forearms with your body straight. Stay in this position for as long as possible.</string>
+    <string name="desc_rope_jumping">Rope jumping is skipping. For this you need a skipping rope. Do it in sets of 15 as a beginner. Gradually increase the count.</string>
+    <string name="desc_seated_toe_touch">Sit with your legs stretched forward. Now raise your legs and stretch your body with your arms forward, then touch the knee and if possible the shin and toe.</string>
+    <string name="desc_spot_jumping">Initially, stand on your feet. Now raise your arms straight and upwards, then start jumping. Repeat it for 2 minutes.</string>
+    <string name="desc_standing_vertical_stretch">Stand with your feet wider than your hips. Inhale, stretch your arms over your head and lock your hands. Now inhale and lean towards the left, then exhale and return back to the initial position. Repeat the same on the other side.</string>
+    <string name="desc_super_cobra_stretch">Initially, keep your arms perpendicular to the ground and your spine arched. Bend your hips and bring the body to a V shaped position. Be in this position for sometime and then return back to the initial position.</string>
+    <string name="desc_table_top">Sit with your legs stretched forward with hands on the side and palms touching the ground. Now lift your body by pressing the arms and feet on the ground to make a table like shape. Stay in this position for about 15 seconds and then return back to the initial position. Repeat it.</string>
+    <string name="desc_triangle_pose">Stretch your legs, a little more than the shoulder width. Turn your right toe to the side. Inhale and raise your arms to the side. Exhale and stretch your right hand to touch the shin by tilting your hip, the left hand should be pointing towards the sky. Take two to three long, slow breaths through your nose. Inhale and come back to the initial position. Repeat the same on the other side.</string>
+    <string name="desc_two_straight_legs_up">Lie on your back with your hands by the side. Raise your legs above the ground at 90 degree. Now with the support of your forearms, lift your body and legs further up towards the ceiling, with the hands placed at the back for support.</string>
+    <string name="desc_wall_stretch">Lean against a wall with your hands. Now stretch with your left leg, a feet away from the wall and your right leg, a feet away from your left leg. Repeat on the other side.</string>
+    <string name="dietplan">Diet Plan</string>
+    <string name="dinner">Dinner</string>
+    <string name="downward_facing_dog_pose">downward facing dog pose</string>
+    <string name="dry_land_swim">dry land swim</string>
+    <string name="eightpieces">*8 pieces</string>
+    <string name="exercises">Exercises</string>
+    <string name="extralongheight">Extra Long Height. Practice Yoga Asanas and take enough rest and sleep well. Eat at the right time. Be more confident. Improve your posture. Maintain your balanced food and add more fresh fruits and leafy vegetables</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="fatfreemilk">Fat-free milk</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="female">Female</string>
+    <string name="fifteeneggs">*15 eggs</string>
+    <string name="fifteenpieces">*15 pieces</string>
+    <string name="fifteentimes">*15 times</string>
+    <string name="firebase_database_url">https://height-gain-7eb44.firebaseio.com</string>
+    <string name="fiveoatmealcookies">5 oatmeal cookies</string>
+    <string name="fivetimes">*5 times</string>
+    <string name="fivewalnuts">5 Walnuts</string>
+    <string name="forblackcoffee4times">for black coffee *4 times</string>
+    <string name="fordinneronetimes">for dinner *1 time</string>
+    <string name="forherbaltea2times">for herbal tea *2 times</string>
+    <string name="forlemonjuice1times">for lemon juice *1 times</string>
+    <string name="forlemonjuice2">for lemon juice * 2 times</string>
+    <string name="forlemonjuice2times">for lemon juice *2 times</string>
+    <string name="forlemonjuice3times">for lemon juice *3 times</string>
+    <string name="formaincourseonetimes">for main course *1 time</string>
+    <string name="formaincoursetimes">for main course *2 times</string>
+    <string name="forsalad10times">for salad * 10 times</string>
+    <string name="forsaladandsnack10times">for salad and snack *10 times</string>
+    <string name="forsaladonetimes">for salad *1 times</string>
+    <string name="forsaladsoupandotherdishes15times">for salad, soup and other dishes *15 times</string>
+    <string name="forsaladsoupandotherdishes24times">for salad, soup and other dishes *24 times</string>
+    <string name="forsaladsoupandotherdishes28times">for salad, soup and other dishes *28 times</string>
+    <string name="forsaladsoupandotherpurposesfifteentimes">for salad , soup and other purposes *15 times</string>
+    <string name="forsaladsoupandotherpurposesseventimes">for salad , soup and other purposes *7 times</string>
+    <string name="forsaladsoupandotherpurposesthreetimes">for salad , soup and other purposes *3 times</string>
+    <string name="forsaladsoupandotherpurposestimes">for salad , soup and other purposes *22 times</string>
+    <string name="forsaladsoupandotherpurposestwentyonetimes">for salad , soup and other purposes *21 times</string>
+    <string name="forsaladsoupandothertwentythreepurposestimes">for salad , soup and other purposes *23 times</string>
+    <string name="super_cobra_stretch">super cobra stretch</string>
+    <string name="pilates_roll_over">pilates roll over</string>
+    <string name="hopping_with_one_leg">hopping with one leg</string>
+    <string name="cat_cow_stretch">cat cow stretch</string>
+    <string name="forward_spine_stretch">forward spine stretch</string>
+    <string name="forwheatwrap6times">for wheat wrap * 6 times</string>
+    <string name="forwheatwrap7times">for wheat wrap * 7 times</string>
+    <string name="rope_jumping">rope jumping</string>
+    <string name="plank">plank</string>
+    <string name="triangle_pose">triangle pose</string>
+    <string name="peanutbutter">Peanut butter</string>
+    <string name="pelvic_shift">pelvic shift</string>
+    <string name="spot_jumping">spot jumping</string>
+    <string name="standarddiet">Standard Diet</string>
+    <string name="standing_vertical_stretch">standing vertical stretch</string>
+    <string name="wall_stretch">wall stretch</string>
+    <string name="wed">Wednesday</string>
+    <string name="week1">WEEK 1</string>
+    <string name="week2">WEEK 2</string>
+    <string name="week3">WEEK 3</string>
+    <string name="week4">WEEK 4</string>
+    <string name="week5">WEEK 5</string>
+    <string name="weight">Weight</string>
+    <string name="weightloss">Weight Loss</string>
+    <string name="wheatforwraps">Wheat for wrapes</string>
+    <string name="wholewheatmultigrainbread">Whole wheat multigrain bread</string>
+    <string name="year">yr</string>
+    <string name="yogurt">Yogurt</string>
+    <string name="seated_toe_touch">seated toe touch</string>
+    <string name="seconds">seconds</string>
+    <string name="greekyogurt">Greek yogurt</string>
+    <string name="greenteapowder">Green tea powder</string>
+    <string name="hands_on_the_head_bow_down">hands on the head bow down</string>
+    <string name="hanging_exercise">hanging exercise</string>
+    <string name="two_straight_legs_up">two straight legs up</string>
+    <string name="sun">Sunday</string>
+    <string name="table_top">table top</string>
+    <string name="tip1">Avoid injuries. Carefully follow the instructions, for each of the workouts, to prevent injuries.</string>
+    <string name="tip10">Get adequate sleep of around 7 -8 hours. Insufficient sleep can lead to heart diseases, high blood pressure, diabetes, obesity etc.</string>
+    <string name="tip2">For your workout, buy shoes that are comfortable. It is better to go for training shoes, as it will give you the comfort and the grip that you are looking for. Replace shoes once in six months.</string>
+    <string name="tip3">Exercise in the morning. Exercising in the morning promotes weight loss, prevents diabetes, lowers blood pressure, keeps you active throughout the day and has many more benefits.</string>
+    <string name="tip4">Have a complete breakfast. Let the breakfast be the heaviest meal in the day. After a good night sleep, you need a nutritious breakfast to kick start your day.</string>
+    <string name="tip5">Drink sufficient quantity of water. Men should consume about 3.7 liters of water per day and women should consume about 2.7 liters of water per day.</string>
+    <string name="tip6">Always make sure, you have a rest day in between your workout days. Let every fourth day be a rest day. Taking rest will help your muscles to grow.</string>
+    <string name="tip7">Avoid junk food as it is high in calories. Junk food can cause obesity, heart diseases and other health conditions.</string>
+    <string name="tip8">Eat a healthy diet. Consume protein rich and low calorie food, as it gives you sufficient strength during workouts and builds muscles.</string>
+    <string name="tip9">Increase your fiber intake. Fiber intake aids digestion and also helps to lose weight and improves your heart health. Consume fiber rich food like beans, broccoli, oatmeal etc.</string>
+    <string name="start">Start</string>
+    <string name="mon">Monday</string>
+    <string name="tu">Tuesday</string>
+    <string name="thri">Thrusday</string>
+    <string name="fri">Friday</string>
+    <string name="sat">Saturday</string>
+    <string name="noreminders">Please set reminder</string>
+
+
+<!--    Walk and step-->
+<!---->
+<!---->
+
+
+
+
+    <!-- Menu Items-->
+    <string name="action_help">Help</string>
+    <string name="action_about">About</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_main">Pedometer</string>
+    <string name="action_training">Training</string>
+
+
+
+    <!-- ReportFragment -->
+    <string name="month">Month</string>
+    <string name="week">Week</string>
+    <string name="steps">Steps</string>
+
+    <string name="activity_summary_subtitle">Summary of activities</string>
+    <string name="activity_chart_summary_subtitle">Detailed summary of your activities</string>
+    <string name="summary_card_kilocalories">kcal</string>
+    <string name="summary_card_calories">cal</string>
+    <string name="correct_steps">Correct steps</string>
+    <string name="correct_steps_dialog_title">Correct steps</string>
+    <string name="correct_steps_dialog_message">Please provide a new number of steps you walked.</string>
+    <string name="hint_steps">Number of steps</string>
+    <string name="pause_step_detection">Pause step detection</string>
+    <string name="continue_step_detection">Continue step detection</string>
+
+
+    <!-- Preferences -->
+    <!-- general settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_group_title_personal_settings">Personalization</string>
+
+    <string name="pref_step_counter_enabled" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.step_counter_enabled</string>
+    <string name="pref_title_step_counter_enabled">Permanent step counter</string>
+    <string name="pref_summary_step_counter_enabled">The app counts your steps in background.</string>
+
+    <string name="pref_use_wake_lock" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.use_wake_lock</string>
+    <string name="pref_title_use_wake_lock">Keep processor awake</string>
+    <string name="pref_summary_use_wake_lock">On some devices the processor falls asleep and prevents counting steps. Enable this to keep the processor awake while counting steps - this may drain your battery!</string>
+
+    <string name="pref_use_wake_lock_during_training" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.use_wake_lock_during_training</string>
+    <string name="pref_title_use_wake_lock_during_training">Wake lock during training</string>
+    <string name="pref_summary_use_wake_lock_during_training">For better results during training mode keep processor awake. If app should keep the processor awake at any time this is automatically the case.</string>
+
+    <string name="pref_show_velocity" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.show_velocity</string>
+    <string name="pref_title_show_velocity">Show current velocity</string>
+    <string name="pref_summary_show_velocity">The app shows your current velocity in daily report. Access to your location is required to calculate the exact velocity.</string>
+
+    <string name="pref_default_daily_step_goal" translatable="false">5000</string>
+    <string name="pref_title_daily_step_goal">Personal daily step goal</string>
+    <string name="pref_unit_of_length" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.unit_of_length</string>
+    <string name="pref_title_unit_of_length">Unit of length</string>
+    <string-array name="pref_keys_unit_of_length">
+        <item>kilometers</item>
+        <item>miles</item>
+    </string-array>
+    <string-array name="pref_values_unit_of_length" translatable="false">
+        <item>km</item>
+        <item>mi</item>
+    </string-array>
+    <string name="unit_of_length_km">1|km|kilometers|km/h|1000|m</string><!-- 1km = 1km -->
+    <string name="unit_of_length_mi">0.621371|mi|miles|mph|5280|ft</string><!-- 1km = 0.621371 miles -->
+    <string name="pref_unit_of_energy" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.unit_of_energy</string>
+    <string name="pref_title_unit_of_energy">Unit of energy</string>
+    <string-array name="pref_keys_unit_of_energy">
+        <item>calories</item>
+        <item>joules</item>
+    </string-array>
+    <string-array name="pref_values_unit_of_energy" translatable="false">
+        <item>cal</item>
+        <item>J</item>
+    </string-array>
+
+    <string name="pref_explanation_weight_and_gender">To improve the calculation of the calories please set your weight and gender.</string>
+    <string name="pref_summary_notification_permanent">The permanent notification is shown when the app counts your steps in background. You can customize what the app should show you.</string>
+    <string name="pref_summary_accelerometer_threshold">The app uses the accelerometer of your device. To optimize the step detection adjust the sensitivity, please.</string>
+
+    <string name="pref_weight" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.weight</string>
+    <string name="pref_title_weight">Weight (kg)</string>
+    <string name="pref_default_weight" translatable="false">65.0</string>
+
+    <string name="pref_gender" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.gender</string>
+    <string name="pref_title_gender">Gender</string>
+    <string-array name="pref_keys_gender">
+        <item>female</item>
+        <item>male</item>
+    </string-array>
+    <string-array name="pref_values_gender" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string name="pref_accelerometer_threshold" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.accelerometer_threshold</string>
+    <string name="pref_title_accelerometer_threshold">Sensitivity</string>
+    <string-array name="pref_keys_accelerometer_threshold">
+        <item>very high</item>
+        <item>higher</item>
+        <item>high</item>
+        <item>normal</item>
+        <item>low</item>
+        <item>lower</item>
+        <item>very low</item>
+    </string-array>
+    <string-array name="pref_values_accelerometer_threshold" translatable="false">
+        <item>0.125</item>
+        <item>0.25</item>
+        <item>0.50</item>
+        <item>0.75</item>
+        <item>1.00</item>
+        <item>1.25</item>
+        <item>1.50</item>
+    </string-array>
+    <string name="pref_accelerometer_steps_threshold" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.accelerometer_step_threshold</string>
+    <string name="pref_title_accelerometer_steps_threshold">Steps before counting starts</string>
+    <string name="pref_default_accelerometer_steps_threshold" translatable="false">10</string>
+    <!-- /general settings -->
+    <!-- notification settings -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_group_title_permanent_notification">Permanent Notification</string>
+    <string name="pref_group_title_motivation_alert">Motivation Alert</string>
+
+    <string name="pref_notification_permanent_show_steps" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.permanent_notification_show_steps</string>
+    <string name="pref_title_notification_permanent_show_steps">Show number of steps walked today</string>
+    <string name="pref_notification_permanent_show_distance" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.permanent_notification_show_distance</string>
+    <string name="pref_title_notification_permanent_show_distance">Show distance walked today</string>
+    <string name="pref_notification_permanent_show_calories" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.permanent_notification_show_calories</string>
+    <string name="pref_title_notification_permanent_show_calories">Show number of calories</string>
+
+    <string name="pref_notification_motivation_alert_enabled" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.motivation_alert_enabled</string>
+    <string name="pref_title_notification_motivation_alert_enabled">Enable motivation alert</string>
+    <string name="pref_notification_motivation_alert_time" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.motivation_alert_time</string>
+    <string name="pref_title_notification_motivation_alert_time">Motivation alert time</string>
+    <string name="pref_notification_motivation_alert_texts" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.motivation_alert_texts</string>
+    <string name="pref_title_notification_motivation_alert_texts">Motivation notification texts</string>
+    <string name="pref_notification_motivation_alert_criterion" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.motivation_alert_criterion</string>
+    <string name="pref_title_notification_motivation_alert_criterion">Motivation alert criterion</string>
+    <string-array name="pref_keys_notification_motivation_alert_criterion">
+        <item>less than 90&#65285; of daily step goal</item>
+        <item>less than 70&#65285; of daily step goal</item>
+        <item>less than 50&#65285; of daily step goal</item>
+    </string-array>
+    <string-array name="pref_values_notification_motivation_alert_criterion" translatable="false">
+        <item>90</item>
+        <item>70</item>
+        <item>50</item>
+    </string-array>
+    <!-- /notification settings -->
+    <string name="pref_header_walking_modes">Walking modes</string>
+    <string name="pref_widget_data_set" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.widget_data_set_</string>
+    <string name="pref_distance_measurement_start_timestamp" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.distance_measurement_start_timestamp</string>
+    <string name="pref_hw_steps_on_last_save" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.hw_steps_on_last_save</string>
+    <!-- /Preferences -->
+
+    <!-- Will be removed on next update -->
+    <string name="pref_daily_step_goal" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.daily_step_goal</string>
+<!--    <string name="notification_text_steps">%1$s of %2$s steps walked today.</string>-->
+    <string name="notification_text_steps">%1$s of steps walked today.</string>
+    <string name="notification_text_distance">%1$.2f %2$s walked today.</string>
+    <string name="notification_text_calories">Burned %.2f kcal today.</string>
+    <string name="notification_text_default">Pedometer is active.</string>
+    <!-- /Will be removed on next update -->
+
+    <!-- others -->
+    <string name="action_calories">Calories</string>
+    <string name="action_distance">Distance</string>
+    <string name="action_steps">Steps</string>
+    <string name="set">Set</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="operation_failed">Operation failed</string>
+    <string name="since">since</string>
+    <string name="okay">Okay</string>
+    <!-- /others -->
+
+    <!-- welcome dialog -->
+    <string name="welcome">Welcome!</string>
+    <string name="welcome_text">Privacy Friendly Pedometer can count your steps in background and provides an overview about walked steps.</string>
+    <string name="slide_2_title">Customize</string>
+    <string name="slide_2_desc">To improve the calculation of the calories you have burned by walking please customize your personal settings.</string>
+    <string name="slide_2_desc_two">You can switch your current walking modes using the context menu in the toolbar.</string>
+    <string name="slide_3_title">Notifications</string>
+    <string name="slide_4_title">Widget</string>
+    <string name="slide_4_desc">Add a widget to your homescreen to stay up to date about your walked steps.</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <!-- /welcome dialog -->
+
+    <!-- motivation alert -->
+    <string-array name="pref_default_notification_motivation_alert_messages">
+        <item>Come on, it\'s time to walk!</item>
+    </string-array>
+    <string name="motivation_alert_empty">Set custom alert messages when the achievement of your daily step goal is in danger.\n\nThere will be no alert if no message exists.</string>
+    <string name="motivation_alert_input_title">Set motivation alert message</string>
+    <string name="motivation_alert_input_message">Set your own custom motivation alert. The app notifies you with one of your texts randomly.</string>
+    <string name="motivation_alert_input_empty">Empty motivation alerts are useless, aren\'t they?</string>
+    <string name="activity_title_motivation_alerts">Motivation alerts</string>
+    <string name="motivation_alert_notification_title">Step Counter</string>
+
+    <!-- walking modes -->
+    <string name="activity_title_walking_modes">Walking modes</string>
+    <string name="walking_mode_input_title">Walking mode</string>
+    <string name="walking_mode_input_message">Set your custom walking mode:</string>
+    <string name="walking_mode_at_least_one_is_required">At least one walking mode is required.</string>
+    <string name="walking_mode_cannot_delete_active_one">Cannot delete an active walking mode.</string>
+    <string name="walking_mode_set_active">Set as active</string>
+    <string name="walking_mode_menu_learn">Learn</string>
+    <string name="walking_mode_learning_distance_description">Distance to walk:</string>
+    <string name="walking_mode_learning_steps_description">Steps walked:</string>
+    <string name="walking_mode_learning_stop">End learning mode</string>
+    <string name="walking_mode_learning_description">The application can learn the distance per step. Please walk the given distance and press end if you finished.</string>
+    <string name="pref_walking_mode_learning_active" translatable="false">com.homeworkouts.fitnessloseweight.WalkandStep.pref.walking_mode_learning_active</string>
+    <string name="step_length">Step length:</string>
+    <string name="walking_mode_active_ext"> (active)</string>
+    <string name="walking_mode_input_empty">Name and step length are required. Please fill in!</string>
+    <string name="hint_walking_mode_name">Name</string>
+    <string name="hint_walking_mode_step_length">Step length (Meters)</string>
+    <string-array name="pref_default_walking_mode_names">
+        <item>Walking</item>
+        <item>Running</item>
+    </string-array>
+    <string-array name="pref_default_walking_mode_step_lenghts" translatable="false">
+        <item>0.5</item><!-- step length in meters -->
+        <item>0.7</item>
+    </string-array>
+
+    <string name="training_overview_empty">It seems like you didn\'t used the training functionality, yet. It\'s time to start your training!</string>
+    <string name="training_input_message" />
+    <string name="training_input_title">Training session</string>
+    <string name="activity_title_training">Training</string>
+    <string name="hint_training_description">Description</string>
+    <string name="hint_training_title">Title</string>
+    <string name="hint_training_feeling">Feeling:</string>
+    <string name="training_card_calories">kcal</string>
+    <string name="training_card_distance_km">km</string>
+    <string name="training_card_duration">h</string>
+    <string name="training_velocity">km/h</string>
+    <string name="training_stop_button">End training now</string>
+    <string name="training_default_title">%1$s %4$02d.%3$02d.%2$04d</string>
+    <string name="activity_summary_chart_legend_stepgoal">Stepgoal</string>
+    <string name="widget_config_data_set_title">Which data should be displayed?</string>
+    <string name="action_distance_measurement">Distance Measurement</string>
+    <string name="distance_measurement_stop_button">Stop distance measurement</string>
+    <string name="distance_measurement_start_button">Start distance measurement</string>
+    <string name="joules">J</string>
+    <string name="kilojoules">kJ</string>
+    <string name="slide_5_title">Step Detection</string>
+    <string name="slide_5_desc">The app detects your steps based on different algorithms. On some devices you can define the sensivity of step detection in settings. In addition to that you can add steps you walked without the app or correct the stepcount on daily activity chart.</string>
+    <string name="slide_3_desc">Define custom walking modes and notifications if the achievement of your daily step goal is in danger.</string>
+    <string name="slide_2_desc_three">In the settings you can define your own walking modes with different step lengths.</string>
+    <string name="help_walkingmodes_heading">Walking Modes</string>
+    <string name="help_walkingmodes_selection">You can define your own walking modes like \'Running\' or \'Walking\' in the preferences. Each walking mode has its own step length.</string>
+    <string name="help_training_heading">Training Sessions</string>
+    <string name="help_training_selection">The training sessions can be used to track your training performance. Each session tracks e.g. the training duration, the walked steps and distance.</string>
+    <string name="help_distancemeasurement_heading">Distance Measurement</string>
+    <string name="help_distancemeasurement_selection">The distance measurement feature allows you to measure the distance between the button press \'Start\' and \'Stop\'. The data will not be stored after app restarts. To persist the data you can use the training sessions.</string>
+    <string name="help_correctsteps_heading">Correct steps manually</string>
+    <string name="help_correctsteps_selection">You can modify the detected daily steps in daily report view. This allows you to add steps you walked without the app or to correct the detected number of steps.</string>
+    <string name="slide_5_desc_two">Click on \'Preferences\' to set your step size and customize your personal data.</string>
+
+</resources>

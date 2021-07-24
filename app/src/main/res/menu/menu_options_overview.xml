@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_pause_step_detection"
+        android:icon="@android:drawable/ic_media_pause"
+        android:title="@string/pause_step_detection"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_continue_step_detection"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="@string/continue_step_detection"
+        app:showAsAction="always" />
+<!--    <item-->
+<!--        android:id="@+id/menu_Setting_main"-->
+<!--        android:icon="@drawable/setting1"-->
+<!--        android:title="@string/action_settings"-->
+<!--        app:showAsAction="always" />-->
+
+
+</menu>

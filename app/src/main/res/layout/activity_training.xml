@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/training_overview_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relaa"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/a1_grad"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewone"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="@dimen/text_20"
+        android:layout_below="@+id/relaa"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="@dimen/text_20"
+        android:orientation="horizontal"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dip">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@mipmap/clock_2" />
+
+                <TextView
+                    android:id="@+id/training_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/imageView8"
+                    android:layout_toRightOf="@+id/imageView8"
+                    android:text="00:00:00"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textIsSelectable="false"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/training_duration"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/training_duration"
+                    android:layout_toRightOf="@+id/training_duration"
+                    android:text="@string/training_card_duration"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/cardviewone"
+        android:layout_above="@+id/button"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewone"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_15"
+                android:layout_marginRight="@dimen/text_15"
+                android:orientation="horizontal"
+                app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/icon_1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                   android:layout_below="@+id/imageView4"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/training_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0.07"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/training_distance_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/training_distance"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/training_distance"
+                    android:layout_toRightOf="@+id/training_distance"
+                    android:text="@string/training_card_distance_km"
+                    android:textColor="@color/colorPrimaryDark" />
+                </RelativeLayout>
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewone"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_15"
+              
+                android:layout_marginRight="@dimen/text_15"
+                android:orientation="horizontal"
+                app:cardCornerRadius="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/icon_2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/imageView6"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/training_velocity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0.07"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/training_velocity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/training_velocity"
+                    android:layout_alignTop="@+id/training_velocity"
+                    android:layout_toEndOf="@+id/training_velocity"
+                    android:layout_toRightOf="@+id/training_velocity"
+                    android:text="@string/training_velocity"
+                    android:textColor="@color/colorPrimaryDark" />
+                </RelativeLayout>
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/l1"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewone"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_15"
+              
+                android:layout_marginRight="@dimen/text_15"
+                android:orientation="horizontal"
+                app:cardCornerRadius="20dp"
+                >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/icon_3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/training_calories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0.07"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"/>
+
+                <TextView
+                    android:id="@+id/training_calories_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/training_calories"
+                    android:layout_toEndOf="@+id/training_calories"
+                    android:layout_toRightOf="@+id/training_calories"
+                    android:text="@string/training_card_calories"
+                    android:textColor="@color/colorPrimaryDark" />
+                </RelativeLayout>
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewone"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_15"
+              
+                android:layout_marginRight="@dimen/text_15"
+                android:orientation="horizontal"
+                app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/icon_4" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/imageView3"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/training_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0.07"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"/>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignBaseline="@id/training_steps"
+                    android:layout_toEndOf="@+id/training_steps"
+                    android:layout_toRightOf="@+id/training_steps"
+                    android:text="@string/steps"
+                    android:textColor="@color/colorPrimaryDark" />
+                </RelativeLayout>
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/text_20"
+        android:background="@drawable/a3_grad"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/training_stop_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/a3_grad"
+            android:layout_centerInParent="true"
+            android:text="@string/training_stop_button"
+            android:textColor="@color/white"
+    />
+    </RelativeLayout>
+</RelativeLayout>

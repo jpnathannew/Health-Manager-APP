@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_banner">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/a1_grad"></RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/top_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="20dp"
+                    sweet:cardMaxElevation="20dp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+
+                    android:id="@+id/rel_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_below="@+id/top_banner">
+
+
+
+                    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/lommeregnerv2"
+                        android:name="com.homeworkouts.fitnessloseweight.WalkandStep.fragments.DailyReportFragment1"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"></fragment>
+
+                    <RelativeLayout
+                        android:id="@+id/i_plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rel_one"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        sweet:cardCornerRadius="20dp"
+                        sweet:cardMaxElevation="20dp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rel_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/relative"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp">
+
+                                <ImageView
+                                    android:id="@+id/imag_1"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_alignParentRight="true"
+                                    android:padding="4dp"
+                                    android:src="@mipmap/water2"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toLeftOf="@+id/imag_1"
+                                    android:fontFamily="@font/gothic"
+                                    android:text="Water"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp" />
+
+
+                            </RelativeLayout>
+
+
+                            <me.itangqi.waveloadingview.WaveLoadingView
+                                android:id="@+id/waterLevelView"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_below="@+id/relative"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                sweet:wlv_borderColor="@color/dot_dark_screen"
+                                sweet:wlv_borderWidth="8dp"
+                                sweet:wlv_progressValue="70"
+                                sweet:wlv_round_rectangle="true"
+                                sweet:wlv_shapeType="circle"
+                                sweet:wlv_titleCenter="0%"
+                                sweet:wlv_titleCenterColor="@color/white"
+                                sweet:wlv_titleCenterSize="16sp"
+                                sweet:wlv_titleCenterStrokeWidth="3dp"
+                                sweet:wlv_triangle_direction="north"
+                                sweet:wlv_waveAmplitude="60"
+                                sweet:wlv_waveColor="@color/dot_light_screen" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/waterLevelView"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:singleLine="true"
+                                android:text="Water Intake Report"
+                                android:textAlignment="center"
+                                android:textColor="@color/grey_calendar"
+                                android:textSize="12dp"
+                                android:typeface="serif" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="@dimen/text_15"
+                        android:layout_marginBottom="@dimen/text_20"
+                        android:layout_weight="1"
+                        sweet:cardCornerRadius="20dp"
+                        sweet:cardMaxElevation="@dimen/text_20">
+
+                        <RelativeLayout
+                            android:id="@+id/rel_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/relative1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp">
+
+                                <ImageView
+                                    android:id="@+id/imag_2"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@mipmap/excercises"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toLeftOf="@+id/imag_2"
+                                    android:fontFamily="@font/gothic"
+                                    android:text="Excercises"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_above="@+id/daysLeft"
+                                android:layout_below="@+id/relative1">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:layout_collapseMode="parallax">
+
+
+                                    <ProgressBar
+                                        android:id="@+id/progress"
+                                        style="?android:attr/progressBarStyleHorizontal"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:progress="25"
+                                        android:progressDrawable="@drawable/custom_progressbar_drawable" />
+
+                                    <TextView
+                                        android:id="@+id/percentScore"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotomedium"
+                                        android:text="0.0%"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="16dp" />
+
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/daysLeft"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/txt_excer"
+                                android:layout_below="@+id/progress"
+                                android:text="00 Days left"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="14dp" />
+
+
+                            <TextView
+                                android:id="@+id/txt_excer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/waterLevelView"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="5dp"
+                                android:singleLine="true"
+                                android:text="Excercises Report"
+                                android:textAlignment="center"
+                                android:textColor="@color/grey_calendar"
+                                android:textSize="12dp"
+                                android:typeface="serif" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.homeworkouts.fitnessloseweight"
+    android:installLocation="internalOnly">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-configuration android:reqTouchScreen="stylus" />
+    <uses-configuration android:reqTouchScreen="finger" />
+
+    <uses-feature
+        android:name="android.hardware.vibrate"
+        android:required="false" />
+
+
+    <!--    work out-->
+    <permission
+        android:name="com.homeworkouts.fitnessloseweight.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.homeworkouts.fitnessloseweight.permission.C2D_MESSAGE" />
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.homeworkouts.fitnessloseweight.general.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:killAfterRestore="true"
+        android:label="@string/app_name"
+        android:restoreAnyVersion="false"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.general.Splash"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.StatsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme"></activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.InitUserInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.Water_MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme"></activity>
+
+        <receiver android:name="com.homeworkouts.fitnessloseweight.recievers.NotifierReceiver" />
+
+        <receiver android:name="com.homeworkouts.fitnessloseweight.recievers.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme1" />
+
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.general.Home_page"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.bmi.BMI_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.bmi.BMI_Chart"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.bmi.BMI_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.body_fat.Bodyfat_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.body_fat.Bodyfat_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.body_fat.Body_Fat_Chart"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.calories_burn.Calories_burn_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.calories_burn.Calories_Burn_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.calories_burn.Calories_Burn_Chart"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.child_growth.Child_Growth_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.child_growth.Child_growth_result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.blood_donation.Blood_Donation_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.blood_donation.Blood_Donation_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.calories_intake.Daily_Calories_Intake_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.calories_intake.Daily_Calories_Intake_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.calories_intake.Daily_Calories_Intake_Chart"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.children_height_growth.Children_Height_Growth_Prediction_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.children_height_growth.Children_Predicted_Height_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.pregnancy_due_date.Pregnancy_Due_Date_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.ideal_body_weight.Ideal_Body_Weight_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.ideal_body_weight.Ideal_Body_Weight_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.heart_rate.Heart_Rate_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.heart_rate.Heart_Rate_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.heart_rate.Heart_Rate_Chart"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.blood_pressure.BloodPressure_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.blood_pressure.Bloodpressure_Chart"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.blood_pressure.BloodPressure_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.alcohol.Alcohol_Chart"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.alcohol.Alcohol_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.alcohol.Alcohol_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.trademill.Trademill_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.trademill.Trademill_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.daily_water.Daily_WaterIntake_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.daily_water.Daily_WaterIntake_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.smoking_cost.Smokincost_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.smoking_cost.SmokingCost_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.sugar.Sugar_calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.sugar.Sugar_Chart"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.sugar.Sugar_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.menstrual_and_ovulation.Menstrual_Ovulation_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.smoking_risk.Smoking_Risk_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.menstrual_and_ovulation.Menstrual_and_ovulation_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.smoking_risk.Smoking_Risk_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.BMR.bmr_calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.BMR.BMR_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.blood_volume.Blood_Volume_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.blood_volume.BloodVolume_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.body_adiposity_index.Body_Adiposity_Index_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.body_adiposity_index.Body_Adiposity_Index_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.body_adiposity_index.Body_Adiposity_Index_Chart"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.body_frame_size.Body_Frame_Size_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.body_frame_size.BodyFrame_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.Body_Surface_Area_Calculator.C1376Body_Surface_Area_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.Body_Surface_Area_Calculator.BodySurfaceArea_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.chest_hip_ratio.Chest_Hip_Ratio_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.chest_hip_ratio.Chest_Hip_Ratio_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.cholestrol.Cholestrol_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.cholestrol.Cholestrol_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.lean_body_mass.Lean_Body_Mass_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.lean_body_mass.Lean_Body_Mass_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.waist_height_ratio.Waist_Height_Ratio_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.waist_height_ratio.Waist_Height_Ratio_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.waist_hip_ratio.Waist_Hip_Ratio_Calculator"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.waist_hip_ratio.Waist_Hip_Ratio_Result"
+            android:launchMode="singleTop"
+            android:theme="@style/LLDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.waist_hip_ratio.Waist_Hip_Ratio_Chart"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <receiver
+            android:name="com.homeworkouts.fitnessloseweight.notification.NotificationBroadcastReciever"
+            android:exported="true" />
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d7ea8cdd40371de71f77b4fb95e71d34fbdceba2" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--        <service-->
+        <!--            android:name="com.google.firebase.iid.FirebaseInstanceIdService"-->
+        <!--            android:exported="true">-->
+        <!--            <intent-filter android:priority="-500">-->
+        <!--                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />-->
+        <!--            </intent-filter>-->
+        <!--        </service>-->
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true"
+            tools:replace="android:exported">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.homeworkouts.fitnessloseweight.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+
+        <!--        pill_reminder-->
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.pill_reminder.Pill_MainActivity"
+            android:theme="@style/AppTheme_pill1">
+
+        </activity>
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.pill_reminder.ReminderAddActivity"
+            android:label="@string/title_activity_add_reminder"
+            android:theme="@style/AppTheme_pill2" />
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.pill_reminder.ReminderEditActivity"
+            android:label="@string/title_activity_edit_reminder"
+            android:theme="@style/AppTheme_pill2" />
+
+
+        <receiver android:name="com.homeworkouts.fitnessloseweight.pill_reminder.AlarmReceiver" />
+
+        <receiver android:name="com.homeworkouts.fitnessloseweight.pill_reminder.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+        <!--        workout Plan-->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_stat_name" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.fragment.Workout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.DayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.RestDayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.CompletionExcActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.ExcDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.MainExcerciseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name="com.homeworkouts.fitnessloseweight.alarm.alarmmanagerdemo.NotificationPublisher"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.homeworkouts.fitnessloseweight.alarmmanagerdemo.NOTIFY_ACTION" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.homeworkouts.fitnessloseweight.receiver.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+
+
+        <receiver
+            android:name="com.homeworkouts.fitnessloseweight.receiver.DailyBrodcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.homeworkouts.fitnessloseweight.receiver.NotificationReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+
+        <!--        walk and step-->
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.WalkandStep.activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme_walk.NoActionBar_walk"></activity>
+
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.WalkandStep.activities.TrainingActivity"
+            android:label="@string/activity_title_training"
+            android:parentActivityName="com.homeworkouts.fitnessloseweight.WalkandStep.activities.TrainingOverviewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.homeworkouts.fitnessloseweight.WalkandStep.activities.TrainingOverviewActivity" />
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.WalkandStep.activities.TrainingOverviewActivity"
+            android:label="@string/activity_title_training"
+            android:parentActivityName="com.homeworkouts.fitnessloseweight.WalkandStep.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.homeworkouts.fitnessloseweight.WalkandStep.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.WalkandStep.activities.PreferencesActivity"
+            android:label="@string/action_settings"
+            android:parentActivityName="com.homeworkouts.fitnessloseweight.WalkandStep.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.homeworkouts.fitnessloseweight.WalkandStep.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.WalkandStep.activities.MotivationAlertTextsActivity"
+            android:label="@string/activity_title_motivation_alerts"
+            android:parentActivityName="com.homeworkouts.fitnessloseweight.WalkandStep.activities.PreferencesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.homeworkouts.fitnessloseweight.WalkandStep.activities.PreferencesActivity" />
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.WalkandStep.activities.WalkingModesActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/activity_title_walking_modes"
+            android:parentActivityName="com.homeworkouts.fitnessloseweight.WalkandStep.activities.PreferencesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.homeworkouts.fitnessloseweight.WalkandStep.activities.PreferencesActivity" />
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.WalkandStep.activities.WalkingModeLearningActivity"
+            android:label="@string/activity_title_walking_modes"
+            android:parentActivityName="com.homeworkouts.fitnessloseweight.WalkandStep.activities.WalkingModesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.homeworkouts.fitnessloseweight.WalkandStep.activities.WalkingModesActivity" />
+        </activity>
+        <activity
+            android:name="com.homeworkouts.fitnessloseweight.WalkandStep.activities.DistanceMeasurementActivity"
+            android:label="@string/action_distance_measurement"
+            android:parentActivityName="com.homeworkouts.fitnessloseweight.WalkandStep.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.homeworkouts.fitnessloseweight.WalkandStep.activities.MainActivity" />
+        </activity>
+        <activity android:name="com.homeworkouts.fitnessloseweight.WalkandStep.activities.WidgetConfigureActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.homeworkouts.fitnessloseweight.WalkandStep.receivers.OnBootCompletedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.homeworkouts.fitnessloseweight.WalkandStep.receivers.OnShutdownBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <!-- this is for some htc devices (and others) -->
+                <action android:name="android.intent.action.QUICKBOOT_POWEROFF" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.homeworkouts.fitnessloseweight.WalkandStep.receivers.OnPackageReplacedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.homeworkouts.fitnessloseweight.WalkandStep.receivers.StepCountPersistenceReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.homeworkouts.fitnessloseweight.WALKING_MODE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.homeworkouts.fitnessloseweight.WalkandStep.receivers.WidgetReceiver">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider" />
+        </receiver>
+
+        <receiver android:name="com.homeworkouts.fitnessloseweight.WalkandStep.receivers.MotivationAlertReceiver" />
+        <receiver android:name="com.homeworkouts.fitnessloseweight.WalkandStep.receivers.HardwareStepCountReceiver" />
+
+        <service android:name="com.homeworkouts.fitnessloseweight.WalkandStep.services.HardwareStepCounterService" />
+        <service android:name="com.homeworkouts.fitnessloseweight.WalkandStep.services.MovementSpeedService" />
+        <service android:name="com.homeworkouts.fitnessloseweight.WalkandStep.services.AccelerometerStepDetectorService" />
+        <service
+            android:name="com.homeworkouts.fitnessloseweight.WalkandStep.services.HardwareStepDetectorService"
+            android:stopWithTask="false" />
+
+
+    </application>
+
+</manifest>

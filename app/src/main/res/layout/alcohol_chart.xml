@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/rela1"
+        android:background="@drawable/a1_grad"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:padding="8dp"
+        android:paddingRight="10dp"
+        android:src="@mipmap/left_arrow" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/iv_back"
+        android:gravity="center"
+        android:text="@string/Blood_Alcohol_Content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <ScrollView
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ad_layout"
+        android:layout_below="@+id/rela1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_alcohol_effects_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/Alcohol_Effects_by_BAC_level"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/textsize_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/corner1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_alcohol_effects_level"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:text="@string/Level"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_alcohol_effects"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:text="@string/Alcohol_Effects"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_level1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:text="0.01 - 0.05"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/textview_effect1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:padding="5dp"
+                        android:text="@string/Average_individual_appears_normal"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_level2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:text="0.03 - 0.12"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/textview_effect2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:padding="5dp"
+                        android:text="@string/Mild_euphoria"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_level3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:text="0.09 - 0.25"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/textview_effect3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:padding="5dp"
+                        android:text="@string/Emotional_instability"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_level4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:text="0.18 - 0.300"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/textview_effect4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:padding="5dp"
+                        android:text="@string/Confusion_dizziness"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_level5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:text="0.27 - 0.40"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/textview_effect5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:padding="5dp"
+                        android:text="@string/Apathy_impaired"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_level6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:text="0.35 - 0.50"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/textview_effect6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:padding="5dp"
+                        android:text="@string/Unconsciousness"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/ad_layout"
+        layout="@layout/native_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|center_vertical|center_horizontal|center" />
+</RelativeLayout>

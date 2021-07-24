@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/restScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:background="@mipmap/workout_banner"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarrest"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/robotomedium"
+            android:gravity="center_vertical"
+            app:layout_collapseMode="pin"
+            android:visibility="gone"
+            app:layout_scrollFlags="enterAlways|scroll"
+            app:title="Try New Health Apps"
+            app:titleTextColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Workout"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gothic"
+            android:textStyle=""/>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewone"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/text_15"
+        android:layout_below="@+id/appBarLayout1"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginRight="@dimen/text_15"
+        android:orientation="horizontal"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dip">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ececec"
+            app:expandedTitleGravity="bottom|center"
+            app:expandedTitleMarginBottom="20dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:titleEnabled="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/nextExerciseName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:fontFamily="@font/robotomedium"
+                                android:text="TRUNK ROTATION"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/nextExerciseCycles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_gravity="center"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:padding="10dp"
+                            android:background="@drawable/a3_grad"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/robotomedium"
+                            android:text="x30"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                    <kr.pe.burt.android.lib.faimageview.FAImageView
+                        android:id="@+id/nextExercisAnimation"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_centerInParent="true">
+
+                            <ProgressBar
+                                android:id="@+id/rest_timer"
+                                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:indeterminate="false"
+                                android:progressDrawable="@drawable/shape_startex" />
+
+                            <TextView
+                                android:id="@+id/rest_counting"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/robotomedium"
+                                android:text="1"
+                                android:textColor="@color/mainactivity_text"
+                                android:textSize="50dp"
+                                android:textStyle="bold" />
+                        </FrameLayout>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/skipRestTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/robotomedium"
+                        android:gravity="center"
+                        android:background="@drawable/a3_grad"
+                        android:text="    SKIP   "
+                        android:typeface="serif"
+                        android:padding="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/pauseRestTime"
+                        android:layout_width="25dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/pause" />
+
+                    <ImageView
+                        android:id="@+id/resumeRestTime"
+                        android:layout_width="30dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/play"
+                        android:visibility="gone" />
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:id="@+id/nativeAdContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description_exDetail"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_roundedwhite"
+                        android:orientation="vertical"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="0dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#10000000"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

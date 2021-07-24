@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color">
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/calculator_banner_2">
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:src="@mipmap/left_arrow" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewone"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_15"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="@dimen/text_15"
+        android:orientation="horizontal"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dip">
+
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ad_layout"
+        android:layout_below="@+id/tv_sugar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_above="@+id/cardviewone"
+                android:layout_marginTop="15dp"
+
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/rel12"
+                    android:layout_width="100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/a3_grad"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/iv_sugar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/img_blood_sugar" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_sugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel12"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="@string/Blood_Sugar_Conversion"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_16" />
+
+            <LinearLayout
+                android:id="@+id/ll_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_sugar_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/corner2"
+                    android:drawableRight="@mipmap/down"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/mg"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_14" />
+
+                <EditText
+                    android:id="@+id/et_sugar_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner2"
+                    android:hint="Enter blood sugar value"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/textsize_14" />
+
+                <TextView
+                    android:id="@+id/tv_caluculate_blood_sugar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/a3_grad"
+                    android:gravity="center"
+                    android:text="@string/Calculate_Blood_Sugar"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/ad_layout"
+        layout="@layout/native_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|center_vertical|center_horizontal|center" />
+</RelativeLayout>

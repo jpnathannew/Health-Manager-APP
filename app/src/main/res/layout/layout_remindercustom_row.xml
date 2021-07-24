@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp">
+        <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            <Switch android:id="@+id/timeswitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="17sp" android:textStyle="normal" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="@string/repeat"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="90dp" android:weightSum="1">
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/day1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_weight="0.1"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/day2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" android:layout_weight="0.1"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/day3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:layout_weight="0.1"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/day4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" android:layout_weight="0.1"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/day5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_weight="0.1"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/day6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:layout_weight="0.1"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/day7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" android:layout_weight="0.1"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/timedelete" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="80dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/delete"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

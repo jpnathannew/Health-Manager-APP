@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/exc_details_layout_appBarLayout"
+        android:layout_width="match_parent"
+        android:background="@drawable/a1_grad"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/exc_details_layout_mtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="55dp"
+            android:theme="@style/myToolbarTheme"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <TextView
+                android:id="@+id/exc_details_layout_toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textAlignment="center"
+                android:layout_marginRight="50dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Toolbar Title"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/fff"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/corner1"
+                android:layout_height="wrap_content">
+
+                <kr.pe.burt.android.lib.faimageview.FAImageView
+                    android:id="@+id/animation_exDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    />
+            </RelativeLayout>
+
+
+
+            <com.travijuu.numberpicker.library.NumberPicker
+                android:id="@+id/number_picker"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/fff"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                app:custom_layout="@layout/number_picker_custom_layout"
+                app:focusable="false"
+                app:max="10"
+                app:min="0"
+                app:unit="1"
+                app:value="-5" />
+
+            <TextView
+                android:id="@+id/numberpicker_cycles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rtrt"
+                android:layout_below="@+id/fff"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="6dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/number_picker"
+                android:gravity="center"
+                android:text="Cycles"
+                android:textSize="16dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rtrt"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/number_picker"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/description_exDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rtrt"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/robotomedium"
+                android:lineSpacingExtra="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="DONKEY KICKS RIGHT\10Start on all fours with your knees under butt. Then lift your right leg and squeeze your butt as much as you can."
+                android:textColor="#a6a6a6"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/nativeAdContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description_exDetail"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_roundedwhite"
+                android:orientation="vertical"
+                android:paddingTop="3dp"
+                android:paddingBottom="0dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.homeworkouts.fitnessloseweight.WalkandStep.activities.MainActivity">
+
+    <group
+        android:id="@+id/menu_group_general"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_directions_walk_65black_30dp"
+            android:orderInCategory="100"
+            android:title="@string/action_main"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/menu_training"
+            android:icon="@drawable/ic_directions_run"
+            android:orderInCategory="100"
+            android:title="@string/action_training"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/menu_distance_measurement"
+            android:icon="@drawable/ic_swap_horiz_black_24dp"
+            android:orderInCategory="100"
+            android:title="@string/action_distance_measurement"
+            app:showAsAction="never" />
+    </group>
+    <group
+        android:id="@+id/menu_group_settings"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_settings"
+            android:orderInCategory="100"
+            android:title="@string/action_settings"
+            app:showAsAction="never" />
+
+    </group>
+</menu>

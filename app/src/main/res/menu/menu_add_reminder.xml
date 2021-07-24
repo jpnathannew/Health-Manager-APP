@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/discard_reminder"
+          android:icon="@drawable/delete"
+          android:title="@string/action_discard_reminder"
+          app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/save_reminder"
+          android:icon="@drawable/check_true"
+          android:title="@string/action_save_reminder"
+          app:showAsAction="ifRoom" />
+</menu>

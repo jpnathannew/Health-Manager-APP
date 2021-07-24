@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardviewone"
+        android:layout_marginBottom="60dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4.0dip"
+    android:orientation="horizontal"
+    app:cardCornerRadius="200dip"
+    app:cardElevation="2.0dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a4_grad"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/row_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotomedium"
+            android:padding="4.0dip"
+            android:text="Day 1"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/mainactivity_text"
+            android:textSize="16.0sp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+             app:layout_constraintLeft_toLeftOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="65dp">
+
+            <com.daimajia.numberprogressbar.NumberProgressBar
+                android:id="@+id/progressbar"
+                style="@style/NumberProgressBar_Custome1"
+                android:layout_width="20dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="55dp"
+            android:layout_margin="4dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/a3_grad"
+            android:layout_height="55dp">
+        <ImageView
+            android:id="@+id/restImageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@mipmap/rest_1"
+            android:layout_centerInParent="true"
+
+
+            android:visibility="visible"
+
+            />
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="0dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

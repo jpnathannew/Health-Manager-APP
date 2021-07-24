@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.UnifiedNativeAdView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="50dp">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/layout_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="8sp" android:textStyle="bold" android:textColor="#ffffff" android:background="#ee8328" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AD"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.google.android.gms.ads.formats.MediaView android:layout_gravity="center_vertical" android:id="@+id/popup_appinstall_image_dialog" android:clickable="false" android:layout_width="match_parent" android:layout_height="150dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerInParent="true" android:contentDescription="@null"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/descriptionLayout" android:background="@android:color/background_light" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/popup_appinstall_app_icon_dialog" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/popup_appinstall_app_icon_dialog" android:layout_centerVertical="true">
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/popup_appinstall_headline_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+                    <TextView android:textSize="8sp" android:textColor="@android:color/black" android:id="@+id/popup_appinstall_body_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="2" android:layout_below="@+id/popup_appinstall_headline_dialog"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <Button android:textSize="12sp" android:textColor="@android:color/background_light" android:id="@+id/popup_appinstall_call_to_action_dialog" android:background="#ee8328" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="40dp" android:text=" Install Now " android:layout_centerInParent="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.gms.ads.formats.UnifiedNativeAdView>

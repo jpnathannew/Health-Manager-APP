@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_above="@+id/ll_bmi"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:id="@+id/ll_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_cig_smoked"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="@string/Enter_no_of_cigarettes_smoked_per_day"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/btnbackground1" />
+
+                <EditText
+                    android:id="@+id/et_cig_inpack"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="@string/Enter_no_of_cigarettes_in_pack"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/btnbackground1" />
+
+                <EditText
+                    android:id="@+id/et_cig_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="@string/Enter_price_per_packes_in_Rs"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/btnbackground1" />
+
+                <TextView
+                    android:id="@+id/tv_count_smoking_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="80dp"
+                    android:background="@color/smoking_cost"
+                    android:gravity="center"
+                    android:text="@string/Calculate_Smoking_cost"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/ad_layout"
+        layout="@layout/native_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|center_vertical|center_horizontal|center" />
+</RelativeLayout>

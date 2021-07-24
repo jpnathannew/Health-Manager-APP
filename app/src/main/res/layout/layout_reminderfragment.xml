@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorgrey" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:navigationIcon="?attr/homeAsUpIndicator" app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="20sp" android:textColor="@color/colorPrimaryDark" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="0dp" android:layout_height="match_parent" android:text="Reminder" android:layout_weight="1" android:fontFamily="@font/roboto_black"/>
+                <ImageView android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2" android:onClick="imageclick"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/reminderlist" android:background="@color/colorgrey" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="25sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/noreminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/noreminders" android:fontFamily="@font/robotomedium"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/addreminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/plus"/>
+    </FrameLayout>
+</LinearLayout>

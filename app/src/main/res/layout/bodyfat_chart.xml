@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rela1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a1_grad">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:padding="8dp"
+            android:src="@mipmap/left_arrow" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/iv_back"
+            android:gravity="center"
+            android:text="@string/Body_Fat_Calculator"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_16" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ad_layout"
+        android:layout_below="@+id/rela1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_bodyfat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:padding="5dp"
+                android:text="@string/Body_Fat_Percentage_Comparison_Table"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/textsize_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/corner1"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fat_level"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Fat_Level"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_men_fatlevel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Men_fat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_women_fatlevel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Women_fat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_vlow_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Very_Low"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_vlow_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="7-10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_vlow_fat_woman"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="14-17"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_low_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Low"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_low_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="10-13"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_low_fat_woman"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="17-20"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_avg_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Average"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_avg_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="13-17"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_avg_fat_woman"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="20-27"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_high_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/High"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_high_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="17-25"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_high_fat_woman"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="27-31"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_vhigh_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Very_High"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_vhigh_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="&gt; 25"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_vhigh_fat_woman"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="&gt; 31"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_bodayfat_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Body_Fat_Percentage_for_Men_and_Women"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/textsize_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/corner1"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_bodayfat_classification"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Classification"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_bodayfat_classification_man"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Men_fat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_bodayfat_classification_woman"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Women_fat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_essential_fat"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Essential_Fat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_essential_fat_man"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="2-4 %"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_essential_fat_woman"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="10-12 %"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_athletes"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Athletes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_athletes_man"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="6-13 %"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_athletes_woman"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="14-20 %"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fitness"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Fitness"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_fitness_man"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="14-17 %"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_fitness_woman"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="21-24 %"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_acceptable"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="@string/Acceptable"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_acceptable_man"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="18-25 %"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_acceptable_woman"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="fill"
+                        android:padding="5dp"
+                        android:text="25-31 %"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_14" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/ad_layout"
+        layout="@layout/native_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|center_vertical|center_horizontal|center" />
+</RelativeLayout>

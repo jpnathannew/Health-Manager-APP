@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:enabled="true"
+        android:icon="@mipmap/menu_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@mipmap/menu_workout"
+        android:title="Workouts" />
+
+    <item
+        android:id="@+id/navigation_world"
+        android:icon="@mipmap/menu_calculator"
+        android:title="Calculater" />
+
+    <item
+        android:id="@+id/navigation_walk"
+        android:icon="@mipmap/menu_walk"
+        android:title="Walk &amp; Steps" />
+
+    <item
+        android:id="@+id/navigation_news"
+        android:icon="@mipmap/menu_reminder"
+        android:title="Reminders" />
+</menu>

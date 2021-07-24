@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:cardCornerRadius="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transperent"
+            >
+
+            <ImageView
+                android:id="@+id/thumbnail_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/a3_grad"></ImageView>
+
+            <TextView
+                android:id="@+id/text123"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="M"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+
+                ></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toLeftOf="@+id/active_image"
+                android:layout_toRightOf="@id/thumbnail_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recycle_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:text="Title" />
+
+                <TextView
+                    android:id="@+id/recycle_date_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    tools:text="Date and Time" />
+
+                <TextView
+                    android:id="@+id/recycle_repeat_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="gchgsfer"
+                    android:textColor="@color/grey_calendar"
+                    android:textSize="13dp"
+                    tools:text="Repeat No and Type" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/active_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/notification_icon" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="arr_home_color1">
+        <item>FFAEAE</item>
+        <item>56BAEC</item>
+        <item>B0E57C</item>
+        <item>B4D8E7</item>
+        <item>DBB1CD</item>
+        <item>21B6A8</item>
+        <item>FFD197</item>
+        <item>E47297</item>
+        <item>A3AE7E</item>
+        <item>FFAEAE</item>
+        <item>56BAEC</item>
+        <item>B0E57C</item>
+        <item>B4D8E7</item>
+        <item>DBB1CD</item>
+        <item>21B6A8</item>
+        <item>FFD197</item>
+        <item>E47297</item>
+        <item>A3AE7E</item>
+        <item>FFAEAE</item>
+        <item>56BAEC</item>
+        <item>B0E57C</item>
+        <item>B4D8E7</item>
+        <item>DBB1CD</item>
+        <item>21B6A8</item>
+        <item>FFD197</item>
+        <item>E47297</item>
+        <item>A3AE7E</item>
+        <item>FFAEAE</item>
+    </array>
+    <array name="arr_home_image">
+        <item>img_basal_metabolic_rate</item>
+        <item>img_blood_alcohol_content</item>
+        <item>img_blood_donation</item>
+        <item>img_blood_pressure</item>
+        <item>img_blood_sugar</item>
+        <item>img_blood_volume</item>
+        <item>img_body_adiposity_index</item>
+        <item>img_body_fat</item>
+        <item>img_body_frame_size</item>
+        <item>img_body_mass</item>
+        <item>img_body_surface_area</item>
+        <item>img_bruce_trade_mill</item>
+        <item>img_calorie_burn</item>
+        <item>img_chest_to_hip_ratio</item>
+        <item>img_childrens_height_predictor</item>
+        <item>img_cholestrol_ratio</item>
+        <item>img_daily_calorie_intake</item>
+        <item>img_daily_water_intake</item>
+        <item>img_heart_rate</item>
+        <item>img_ideal_body_weight</item>
+        <item>img_kids_growth</item>
+        <item>img_lean_body_mass</item>
+        <item>img_menstraul_ovulation</item>
+        <item>img_pregnancy_due_date</item>
+        <item>img_resting_metabolic_rate</item>
+        <item>img_smoking_risk</item>
+        <item>img_waist_to_height_ratio</item>
+        <item>img_waist_to_hip_ratio</item>
+    </array>
+    <array name="arr_home_image1">
+        <item>img_basal_metabolic_rate1</item>
+        <item>img_blood_alcohol_content1</item>
+        <item>img_blood_donation1</item>
+        <item>img_blood_pressure1</item>
+        <item>img_blood_sugar1</item>
+        <item>img_blood_volume1</item>
+        <item>img_body_adiposity_index1</item>
+        <item>img_body_fat1</item>
+        <item>img_body_frame_size1</item>
+        <item>img_body_mass1</item>
+        <item>img_body_surface_area1</item>
+        <item>img_bruce_trade_mill1</item>
+        <item>img_calorie_burn1</item>
+        <item>img_chest_to_hip_ratio1</item>
+        <item>img_childrens_height_predictor1</item>
+        <item>img_cholestrol_ratio1</item>
+        <item>img_daily_calorie_intake1</item>
+        <item>img_daily_water_intake1</item>
+        <item>img_heart_rate1</item>
+        <item>img_ideal_body_weight1</item>
+        <item>img_kids_growth1</item>
+        <item>img_lean_body_mass1</item>
+        <item>img_menstraul_ovulation1</item>
+        <item>img_pregnancy_due_date1</item>
+        <item>img_resting_metabolic_rate1</item>
+        <item>img_smoking_risk1</item>
+        <item>img_waist_to_height_ratio1</item>
+        <item>img_waist_to_hip_ratio1</item>
+    </array>
+    <array name="arr_home_title">
+        <item>Basal Metabolic Rate</item>
+        <item>Blood Alcohol Content</item>
+        <item>Blood Donation</item>
+        <item>Blood Pressure</item>
+        <item>Blood Sugar</item>
+        <item>Blood Volume</item>
+        <item>Body Adiposity Index</item>
+        <item>Body Fat</item>
+        <item>Body Frame Size</item>
+        <item>Body Mass Index</item>
+        <item>Body Surface Area</item>
+        <item>Bruce Trade Mill</item>
+        <item>Calorie Burn</item>
+        <item>Chest To Hip Ratio</item>
+        <item>Childrens Height Predictor</item>
+        <item>Cholestrol Ratio</item>
+        <item>Daily Calorie Intake</item>
+        <item>Daily Water Intake</item>
+        <item>Heart Rate</item>
+        <item>Ideal Body Weight</item>
+        <item>Kids Growth</item>
+        <item>Lean Body Mass</item>
+        <item>Menstraul &amp; Ovulation</item>
+        <item>Pregnancy Due Date</item>
+        <item>Resting Metabolic Rate</item>
+        <item>Smoking Risk</item>
+        <item>Waist To Height Ratio</item>
+        <item>Waist To Hip Ratio</item>
+    </array>
+    <array name="notification_text">
+        <item>Checkout how healthy you are using all health parameter ?</item>
+        <item>What is your BMI ? Calculate now.</item>
+        <item>Have you done your weakly health checkup ?</item>
+    </array>
+    <array name="recommended_app_image">
+        <item>app_locker</item>
+        <item>indian_wedding_photo_frame</item>
+        <item>cricket_jersey_photo_editor</item>
+        <item>mobile_number_tracker_pro</item>
+        <item>pragma_browser_downloader</item>
+        <item>mp3_music_player</item>
+        <item>telnet_client_terminal</item>
+        <item>bluetooth_terminal_pro</item>
+        <item>ping_traceroute</item>
+        <item>private_photo_video_vault</item>
+        <item>ftp_client_pro</item>
+        <item>smart_dialer</item>
+        <item>inventory_plus</item>
+        <item>unit_converter</item>
+        <item>currency_converter</item>
+        <item>post_generator</item>
+        <item>wallpaper_maker</item>
+        <item>battery_health_status_notify</item>
+        <item>hd_wallpaper</item>
+        <item>cartoon_effect_photo_editor</item>
+        <item>advance_alarm_clock_pro</item>
+        <item>collagemaker_app_logo</item>
+    </array>
+    <array name="recommended_app_link">
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.applocker</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.weddingphotoframe</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.cricket.jersey</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.mobiletracker</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.browser</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.musicplayer</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.terminal</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.bluetoothterminal</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.multiping</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.final_photo_vault</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.ftp.client.pro</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.smartdialer</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.inventory</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragmaoffshore.unitconverter</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.currency.calculator</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.postit</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.wallpapermaker</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.tiaraphotoframes</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.hdwallpaper</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.cartoon</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragma.offshore.alarm</item>
+        <item>https://play.google.com/store/apps/details?id=com.pragmaoffshore.photocollagemaker</item>
+    </array>
+    <array name="recommended_app_name">
+        <item>App Locker</item>
+        <item>Indian Wedding Photo Frame</item>
+        <item>Cricket Jersey Photo Editor</item>
+        <item>Mobile Number Tracker Pro</item>
+        <item>Loop Browser &amp; Downloader</item>
+        <item>Mp3 Music Player</item>
+        <item>Telnet Client Terminal</item>
+        <item>Bluetooth Terminal Pro</item>
+        <item>Ping &amp; Traceroute</item>
+        <item>Private Photo &amp; Video Vault</item>
+        <item>FTP Client Pro</item>
+        <item>Smart Dialer</item>
+        <item>Inventory Plus</item>
+        <item>Unit Converter - 35 Calculator</item>
+        <item>Currency Converter</item>
+        <item>Post Generator for FB &amp; insta</item>
+        <item>Wallpaper Maker</item>
+        <item>Battery Health Status Notify</item>
+        <item>HD Wallpaper</item>
+        <item>Cartoon Effect Photo Editor</item>
+        <item>Advance Alarm Clock Pro</item>
+        <item>Photo Collage &amp; Frames</item>
+    </array>
+
+<!--    work out-->
+    <array name="cat_cow_stretch">
+        <item>@drawable/cat_cow_stretch_a</item>
+    </array>
+    <string-array name="day1">
+        <item>@string/dry_land_swim</item>
+        <item>@string/pilates_roll_over</item>
+        <item>@string/pelvic_shift</item>
+        <item>@string/triangle_pose</item>
+        <item>@string/standing_vertical_stretch</item>
+        <item>@string/wall_stretch</item>
+        <item>@string/seated_toe_touch</item>
+    </string-array>
+    <string-array name="day10">
+        <item>@string/hanging_exercise</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/forward_spine_stretch</item>
+        <item>@string/hanging_exercise</item>
+        <item>@string/triangle_pose</item>
+        <item>@string/plank</item>
+        <item>@string/rope_jumping</item>
+    </string-array>
+    <integer-array name="day10_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="day11">
+        <item>@string/pelvic_shift</item>
+        <item>@string/dry_land_swim</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/pilates_roll_over</item>
+        <item>@string/wall_stretch</item>
+        <item>@string/standing_vertical_stretch</item>
+        <item>@string/triangle_pose</item>
+        <item>@string/seated_toe_touch</item>
+        <item>@string/rope_jumping</item>
+    </string-array>
+    <integer-array name="day11_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <array name="day12" />
+    <array name="day12_cycles" />
+    <string-array name="day13">
+        <item>@string/hanging_exercise</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/pilates_roll_over</item>
+        <item>@string/hopping_with_one_leg</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/forward_spine_stretch</item>
+        <item>@string/downward_facing_dog_pose</item>
+        <item>@string/rope_jumping</item>
+        <item>@string/hanging_exercise</item>
+        <item>@string/plank</item>
+    </string-array>
+    <integer-array name="day13_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="day14">
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/forward_spine_stretch</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/triangle_pose</item>
+        <item>@string/downward_facing_dog_pose</item>
+        <item>@string/rope_jumping</item>
+        <item>@string/plank</item>
+    </string-array>
+    <integer-array name="day14_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="day15">
+        <item>@string/dry_land_swim</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/pilates_roll_over</item>
+        <item>@string/forward_spine_stretch</item>
+        <item>@string/hands_on_the_head_bow_down</item>
+        <item>@string/spot_jumping</item>
+        <item>@string/two_straight_legs_up</item>
+        <item>@string/dry_land_swim</item>
+        <item>@string/super_cobra_stretch</item>
+    </string-array>
+    <integer-array name="day15_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <array name="day16" />
+    <array name="day16_cycles" />
+    <string-array name="day17">
+        <item>@string/hanging_exercise</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/downward_facing_dog_pose</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/two_straight_legs_up</item>
+        <item>@string/table_top</item>
+        <item>@string/hanging_exercise</item>
+        <item>@string/rope_jumping</item>
+    </string-array>
+    <integer-array name="day17_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="day18">
+        <item>@string/dry_land_swim</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/two_straight_legs_up</item>
+        <item>@string/downward_facing_dog_pose</item>
+        <item>@string/seated_toe_touch</item>
+        <item>@string/hanging_exercise</item>
+    </string-array>
+    <integer-array name="day18_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="day19">
+        <item>@string/dry_land_swim</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/pelvic_shift</item>
+        <item>@string/pilates_roll_over</item>
+        <item>@string/spot_jumping</item>
+        <item>@string/forward_spine_stretch</item>
+        <item>@string/wall_stretch</item>
+        <item>@string/hands_on_the_head_bow_down</item>
+        <item>@string/rope_jumping</item>
+        <item>@string/dry_land_swim</item>
+    </string-array>
+    <integer-array name="day19_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <integer-array name="day1_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="day2">
+        <item>@string/dry_land_swim</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/hands_on_the_head_bow_down</item>
+        <item>@string/triangle_pose</item>
+        <item>@string/wall_stretch</item>
+        <item>@string/seated_toe_touch</item>
+    </string-array>
+    <array name="day20" />
+    <array name="day20_cycles" />
+    <string-array name="day21">
+        <item>@string/hanging_exercise</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/downward_facing_dog_pose</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/hopping_with_one_leg</item>
+        <item>@string/two_straight_legs_up</item>
+        <item>@string/table_top</item>
+        <item>@string/hanging_exercise</item>
+    </string-array>
+    <integer-array name="day21_cycles">
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+    </integer-array>
+    <string-array name="day22">
+        <item>@string/two_straight_legs_up</item>
+        <item>@string/seated_toe_touch</item>
+        <item>@string/table_top</item>
+        <item>@string/hanging_exercise</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/hopping_with_one_leg</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/hanging_exercise</item>
+        <item>@string/rope_jumping</item>
+    </string-array>
+    <integer-array name="day22_cycles">
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+    </integer-array>
+    <string-array name="day23">
+        <item>@string/hanging_exercise</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/hopping_with_one_leg</item>
+        <item>@string/two_straight_legs_up</item>
+        <item>@string/table_top</item>
+        <item>@string/downward_facing_dog_pose</item>
+        <item>@string/hanging_exercise</item>
+        <item>@string/rope_jumping</item>
+    </string-array>
+    <integer-array name="day23_cycles">
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+    </integer-array>
+    <array name="day24" />
+    <array name="day24_cycles" />
+    <string-array name="day25">
+        <item>@string/dry_land_swim</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/pelvic_shift</item>
+        <item>@string/pilates_roll_over</item>
+        <item>@string/spot_jumping</item>
+        <item>@string/hands_on_the_head_bow_down</item>
+        <item>@string/wall_stretch</item>
+        <item>@string/forward_spine_stretch</item>
+        <item>@string/rope_jumping</item>
+        <item>@string/dry_land_swim</item>
+        <item>@string/pelvic_shift</item>
+    </string-array>
+    <integer-array name="day25_cycles">
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+    </integer-array>
+    <string-array name="day26">
+        <item>@string/dry_land_swim</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/pilates_roll_over</item>
+        <item>@string/pelvic_shift</item>
+        <item>@string/spot_jumping</item>
+        <item>@string/hands_on_the_head_bow_down</item>
+        <item>@string/wall_stretch</item>
+        <item>@string/rope_jumping</item>
+        <item>@string/dry_land_swim</item>
+        <item>@string/pelvic_shift</item>
+        <item>@string/super_cobra_stretch</item>
+    </string-array>
+    <integer-array name="day26_cycles">
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+    </integer-array>
+    <string-array name="day27">
+        <item>@string/hanging_exercise</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/downward_facing_dog_pose</item>
+        <item>@string/hopping_with_one_leg</item>
+        <item>@string/standing_vertical_stretch</item>
+        <item>@string/seated_toe_touch</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/hanging_exercise</item>
+    </string-array>
+    <integer-array name="day27_cycles">
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+    </integer-array>
+    <array name="day28" />
+    <array name="day28_cycles" />
+    <string-array name="day29">
+        <item>@string/hanging_exercise</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/hopping_with_one_leg</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/downward_facing_dog_pose</item>
+        <item>@string/standing_vertical_stretch</item>
+        <item>@string/two_straight_legs_up</item>
+        <item>@string/rope_jumping</item>
+        <item>@string/hanging_exercise</item>
+    </string-array>
+    <integer-array name="day29_cycles">
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+    </integer-array>
+    <integer-array name="day2_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="day3">
+        <item>@string/hanging_exercise</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/hopping_with_one_leg</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/forward_spine_stretch</item>
+        <item>@string/pilates_roll_over</item>
+        <item>@string/plank</item>
+        <item>@string/rope_jumping</item>
+    </string-array>
+    <string-array name="day30">
+        <item>@string/hanging_exercise</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/downward_facing_dog_pose</item>
+        <item>@string/two_straight_legs_up</item>
+        <item>@string/table_top</item>
+        <item>@string/seated_toe_touch</item>
+        <item>@string/rope_jumping</item>
+        <item>@string/hanging_exercise</item>
+    </string-array>
+    <integer-array name="day30_cycles">
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+    </integer-array>
+    <integer-array name="day3_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <array name="day4" />
+    <array name="day4_cycles" />
+    <string-array name="day5">
+        <item>@string/hanging_exercise</item>
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/forward_spine_stretch</item>
+        <item>@string/seated_toe_touch</item>
+        <item>@string/plank</item>
+        <item>@string/rope_jumping</item>
+    </string-array>
+    <integer-array name="day5_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="day6">
+        <item>@string/dry_land_swim</item>
+        <item>@string/pelvic_shift</item>
+        <item>@string/hands_on_the_head_bow_down</item>
+        <item>@string/wall_stretch</item>
+        <item>@string/spot_jumping</item>
+        <item>@string/table_top</item>
+        <item>@string/two_straight_legs_up</item>
+        <item>@string/dry_land_swim</item>
+        <item>@string/seated_toe_touch</item>
+    </string-array>
+    <integer-array name="day6_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="day7">
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/hanging_exercise</item>
+        <item>@string/pilates_roll_over</item>
+        <item>@string/downward_facing_dog_pose</item>
+        <item>@string/hopping_with_one_leg</item>
+        <item>@string/forward_spine_stretch</item>
+        <item>@string/hanging_exercise</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/plank</item>
+        <item>@string/rope_jumping</item>
+    </string-array>
+    <integer-array name="day7_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+    <array name="day8" />
+    <array name="day8_cycles" />
+    <string-array name="day9">
+        <item>@string/super_cobra_stretch</item>
+        <item>@string/forward_spine_stretch</item>
+        <item>@string/downward_facing_dog_pose</item>
+        <item>@string/cat_cow_stretch</item>
+        <item>@string/forward_spine_stretch</item>
+        <item>@string/hanging_exercise</item>
+        <item>@string/plank</item>
+        <item>@string/rope_jumping</item>
+    </string-array>
+    <integer-array name="day9_cycles">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+
+    <array name="downward_facing_dog_pose">
+        <item>@drawable/doge_pose</item>
+    </array>
+    <array name="dry_land_swim">
+        <item>@drawable/drt_land_swim_a</item>
+        <item>@drawable/drt_land_swim_b</item>
+        <item>@drawable/drt_land_swim_a</item>
+    </array>
+    <array name="forward_spine_stretch">
+        <item>@drawable/forward_spine_stretch_a</item>
+        <item>@drawable/forward_spine_stretch_b</item>
+        <item>@drawable/forward_spine_stretch_a</item>
+    </array>
+    <array name="hands_on_the_head_bow_down">
+        <item>@drawable/hands_on_the_head_bow_down_a</item>
+        <item>@drawable/hands_on_the_head_bow_down_b</item>
+        <item>@drawable/hands_on_the_head_bow_down_a</item>
+    </array>
+    <array name="hanging_exercise">
+        <item>@drawable/hanging_exercise_a</item>
+        <item>@drawable/hanging_exercise_b</item>
+        <item>@drawable/hanging_exercise_a</item>
+    </array>
+    <array name="hopping_with_one_leg">
+        <item>@drawable/hopping_with_one_leg_a</item>
+        <item>@drawable/hopping_with_one_leg_b</item>
+        <item>@drawable/hopping_with_one_leg_a</item>
+    </array>
+    <array name="pelvic_shift">
+        <item>@drawable/pelvic_shift_a</item>
+        <item>@drawable/pelvic_shift_b</item>
+        <item>@drawable/pelvic_shift_a</item>
+    </array>
+    <array name="pilates_roll_over">
+        <item>@drawable/pilates_rool_over_a</item>
+        <item>@drawable/pilates_rool_over_b</item>
+        <item>@drawable/pilates_rool_over_a</item>
+    </array>
+    <array name="plank">
+        <item>@drawable/plank_a</item>
+    </array>
+    <array name="rope_jumping">
+        <item>@drawable/rope_jumping_a</item>
+        <item>@drawable/rope_jumping_b</item>
+    </array>
+    <array name="seated_toe_touch">
+        <item>@drawable/seated_toe_touch_b</item>
+        <item>@drawable/seated_toe_touch_a</item>
+        <item>@drawable/seated_toe_touch_b</item>
+    </array>
+    <array name="spot_jumping">
+        <item>@drawable/spot_jumping_b</item>
+        <item>@drawable/spot_jumping_a</item>
+    </array>
+    <array name="standing_vertical_stretch">
+        <item>@drawable/standing_vertical_stretch_a</item>
+        <item>@drawable/standing_vertical_stretc_b</item>
+    </array>
+    <array name="super_cobra_stretch">
+        <item>@drawable/super_cobra_stretch</item>
+    </array>
+    <array name="table_top">
+        <item>@drawable/table_top_a</item>
+        <item>@drawable/table_top_b</item>
+        <item>@drawable/table_top_a</item>
+    </array>
+    <string-array name="tips">
+        <item>@string/tip1</item>
+        <item>@string/tip2</item>
+        <item>@string/tip3</item>
+        <item>@string/tip4</item>
+        <item>@string/tip5</item>
+        <item>@string/tip6</item>
+        <item>@string/tip7</item>
+        <item>@string/tip8</item>
+        <item>@string/tip9</item>
+        <item>@string/tip10</item>
+    </string-array>
+    <array name="triangle_pose">
+        <item>@drawable/triangle_pose</item>
+    </array>
+    <array name="two_straight_legs_up">
+        <item>@drawable/two_straight_legs_up</item>
+    </array>
+    <array name="wall_stretch">
+        <item>@drawable/wall_stretch_a</item>
+        <item>@drawable/wall_stretch_b</item>
+        <item>@drawable/wall_stretch_a</item>
+    </array>
+    <string-array name="day_list">
+        <item>@string/mon</item>
+        <item>@string/tu</item>
+        <item>@string/wed</item>
+        <item>@string/thri</item>
+        <item>@string/fri</item>
+        <item>@string/sat</item>
+        <item>@string/sun</item>
+    </string-array>
+</resources>

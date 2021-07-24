@@ -1,0 +1,42 @@
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:fragment="com.homeworkouts.fitnessloseweight.WalkandStep.activities.PreferencesActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/pref_header_general" />
+
+
+    <header
+        android:fragment="com.homeworkouts.fitnessloseweight.WalkandStep.activities.PreferencesActivity$NotificationPreferenceFragment"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/pref_header_notifications" />
+
+
+    <header
+        android:icon="@drawable/ic_walk_black_24dp"
+        android:title="@string/pref_header_walking_modes"
+        >
+        <intent
+            android:targetClass="com.homeworkouts.fitnessloseweight.WalkandStep.activities.WalkingModesActivity"
+            android:targetPackage="com.homeworkouts.fitnessloseweight" />
+    </header>
+    <header
+
+        android:icon="@drawable/ic_directions_run"
+        android:title="@string/action_training">
+        <intent
+            android:targetClass="com.homeworkouts.fitnessloseweight.WalkandStep.activities.TrainingActivity"
+            android:targetPackage="com.homeworkouts.fitnessloseweight" />
+
+    </header>
+
+    <header
+        android:icon="@drawable/ic_swap_horiz_black_24dp"
+        android:title="@string/action_distance_measurement">
+        <intent
+            android:targetClass="com.homeworkouts.fitnessloseweight.WalkandStep.activities.DistanceMeasurementActivity"
+            android:targetPackage="com.homeworkouts.fitnessloseweight" />
+
+    </header>
+</preference-headers>
